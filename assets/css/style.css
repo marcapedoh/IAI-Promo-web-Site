@@ -1,0 +1,29 @@
+.glassmorphism {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        .club-card {
+            transition: all 0.3s ease;
+        }
+        .club-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .event-card {
+            transition: all 0.3s ease;
+        }
+        .event-card:hover {
+            transform: scale(1.02);
+        }
+        .image-upload {
+            border: 2px dashed #fbbf24;
+            background-color: #fef3c7;
+            transition: all 0.3s ease;
+        }
+        .image-upload:hover {
+            background-color: #fde68a;
+            border-color: #f59e0b;
+        }
+

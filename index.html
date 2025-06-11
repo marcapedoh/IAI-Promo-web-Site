@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IAI Gabon - Institut Africain d'Informatique</title>
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Framer Motion CDN -->
+        <script
+            src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
+        <!-- Lucide Icons CDN -->
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <!-- AOS Animation CDN -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body class="bg-white font-sans">
+        <!-- Navigation -->
+        <nav class="bg-yellow-400 text-white shadow-lg">
+            <div
+                class="container mx-auto px-6 py-3 flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div
+                        class=" flex items-center justify-center">
+                        <img src="assets/Iai-togo.jpg"
+                            class="w-12 h-12 bg-white rounded-full" />
+                    </div>
+                    <span class="text-xl font-bold text-gray-800">IAI (Institut
+                        Africain d'Informatique)
+                    </span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#"
+                        class="text-gray-800 font-semibold hover:text-yellow-600">Accueil</a>
+                    <a href="#formations"
+                        class="text-gray-800 font-semibold hover:text-yellow-600">Formations</a>
+                    <a href="#pays"
+                        class="text-gray-800 font-semibold hover:text-yellow-600">Pays
+                        membres</a>
+                    <a href="#vie-etudiante"
+                        class="text-gray-800 font-semibold hover:text-yellow-600">Vie
+                        étudiante</a>
+                    <a href="page2.html"
+                        class="bg-yellow-500 px-4 py-2 rounded-lg text-white font-semibold hover:bg-yellow-600 transition">Commencer
+                        !</a>
+                </div>
+                <button class="md:hidden">
+                    <i data-lucide="menu" class="w-6 h-6 text-gray-800"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section
+            class="relative h-screen flex items-center justify-center bg-gradient-to-r from-yellow-100 to-yellow-50 overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div
+                    class="absolute top-0 left-0 w-32 h-32 bg-yellow-400 rounded-full filter blur-xl"></div>
+                <div
+                    class="absolute bottom-0 right-0 w-64 h-64 bg-yellow-500 rounded-full filter blur-xl"></div>
+            </div>
+
+            <div class="container mx-auto px-6 z-10 text-center"
+                data-aos="fade-up">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 text-gray-800">
+                    <span class="morphing-text">Institut Africain
+                        d'Informatique</span>
+                </h1>
+                <p
+                    class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Excellence académique et innovation technologique au service
+                    du développement africain
+                </p>
+                <a href="page2.html"
+                    class="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg">
+                    Commencer l'exploration
+                </a>
+            </div>
+
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+                <a href="#formations" class="animate-bounce inline-block">
+                    <i data-lucide="chevron-down"
+                        class="w-10 h-10 text-yellow-500"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Formations Section -->
+        <section id="formations" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2
+                    class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800"
+                    data-aos="fade-up">
+                    Nos <span class="text-yellow-500">Parcours</span>
+                    Académiques
+                </h2>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- AP Card -->
+                    <div class="glassmorphism rounded-xl p-6 shadow-lg"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <div
+                            class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="code"
+                                class="w-8 h-8 text-yellow-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">AP
+                            (Analyste Programmeur)</h3>
+                        <p class="text-gray-600 mb-4">Formation intensive en
+                            développement logiciel et conception
+                            d'applications.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i data-lucide="check-circle"
+                                    class="w-5 h-5 text-yellow-500 mr-2"></i>
+                                <span class="text-gray-600">Durée: 3 ans</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="check-circle"
+                                    class="w-5 h-5 text-yellow-500 mr-2"></i>
+                                <span class="text-gray-600">Diplôme:
+                                    Licence</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- MIAGE Card -->
+                    <div class="glassmorphism rounded-xl p-6 shadow-lg"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <div
+                            class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="briefcase"
+                                class="w-8 h-8 text-yellow-500"></i>
+                        </div>
+                        <h3
+                            class="text-xl font-bold mb-2 text-gray-800">MIAGE</h3>
+                        <p class="text-gray-600 mb-4">Méthodes Informatiques
+                            Appliquées à la Gestion des Entreprises.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i data-lucide="check-circle"
+                                    class="w-5 h-5 text-yellow-500 mr-2"></i>
+                                <span class="text-gray-600">Durée: 2 ans</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="check-circle"
+                                    class="w-5 h-5 text-yellow-500 mr-2"></i>
+                                <span class="text-gray-600">Diplôme:
+                                    Formation Universitaire</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Master Card -->
+                    <div class="glassmorphism rounded-xl p-6 shadow-lg"
+                        data-aos="fade-up" data-aos-delay="300">
+                        <div
+                            class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="graduation-cap"
+                                class="w-8 h-8 text-yellow-500"></i>
+                        </div>
+                        <h3
+                            class="text-xl font-bold mb-2 text-gray-800">Master</h3>
+                        <p class="text-gray-600 mb-4">Spécialisations avancées
+                            en technologies de l'information.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i data-lucide="check-circle"
+                                    class="w-5 h-5 text-yellow-500 mr-2"></i>
+                                <span class="text-gray-600">Durée: 2 ans</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="check-circle"
+                                    class="w-5 h-5 text-yellow-500 mr-2"></i>
+                                <span class="text-gray-600">Filières: IA, Big
+                                    Data, etc.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- ING Card -->
+                    <div class="glassmorphism rounded-xl p-6 shadow-lg"
+                        data-aos="fade-up" data-aos-delay="400">
+                        <div
+                            class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="cpu"
+                                class="w-8 h-8 text-yellow-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Cycle
+                            d'Ingénieur</h3>
+                        <p class="text-gray-600 mb-4">Formation d'excellence
+                            pour devenir ingénieur en informatique.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i data-lucide="check-circle"
+                                    class="w-5 h-5 text-yellow-500 mr-2"></i>
+                                <span class="text-gray-600">Durée:
+                                    3ans</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="check-circle"
+                                    class="w-5 h-5 text-yellow-500 mr-2"></i>
+                                <span class="text-gray-600">Spécialisations
+                                    variées</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filières Section -->
+        <section class="py-20 bg-yellow-50">
+            <div class="container mx-auto px-6">
+                <h2
+                    class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800"
+                    data-aos="fade-up">
+                    Nos <span class="text-yellow-500">Filières</span>
+                    Spécialisées
+                </h2>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- IA-DataScience -->
+                    <div
+                        class="bg-white rounded-xl p-6 shadow-lg transform transition hover:scale-105"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center mb-4">
+                            <div
+                                class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="brain-circuit"
+                                    class="w-6 h-6 text-yellow-500"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">IA &
+                                Data Science</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Maîtrisez l'intelligence
+                            artificielle, le machine learning et l'analyse des
+                            données.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Python</span>
+                            <span
+                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">TensorFlow</span>
+                            <span
+                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Data
+                                Mining</span>
+                        </div>
+                    </div>
+
+                    <!-- Big Data -->
+                    <div
+                        class="bg-white rounded-xl p-6 shadow-lg transform transition hover:scale-105"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-center mb-4">
+                            <div
+                                class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="database"
+                                    class="w-6 h-6 text-yellow-500"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Big
+                                Data</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Apprenez à gérer et
+                            analyser des volumes massifs de données avec les
+                            technologies modernes.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Hadoop</span>
+                            <span
+                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Spark</span>
+                            <span
+                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">NoSQL</span>
+                        </div>
+                    </div>
+
+                    <!-- CyberSécurité -->
+                    <div
+                        class="bg-white rounded-xl p-6 shadow-lg transform transition hover:scale-105"
+                        data-aos="fade-up" data-aos-delay="300">
+                        <div class="flex items-center mb-4">
+                            <div
+                                class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="shield"
+                                    class="w-6 h-6 text-yellow-500"></i>
+                            </div>
+                            <h3
+                                class="text-xl font-bold text-gray-800">CyberSécurité</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Devenez expert en sécurité
+                            informatique et protection des systèmes
+                            d'information.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Ethical
+                                Hacking</span>
+                            <span
+                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Cryptographie</span>
+                            <span
+                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Pentesting</span>
+                        </div>
+                    </div>
+
+                    <!-- DevOps -->
+                    <div
+                        class="bg-white rounded-xl p-6 shadow-lg transform transition hover:scale-105"
+                        data-aos="fade-up" data-aos-delay="400">
+                        <div class="flex items-center mb-4">
+                            <div
+                                class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="server"
+                                    class="w-6 h-6 text-yellow-500"></i>
+                            </div>
+                            <h3
+                                class="text-xl font-bold text-gray-800">DevOps</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Intégrez les méthodologies
+                            DevOps pour un développement logiciel agile et
+                            efficace.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Docker</span>
+                            <span
+                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Kubernetes</span>
+                            <span
+                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">CI/CD</span>
+                        </div>
+                    </div>
+
+                    <!-- Ingénierie des données -->
+                    <div
+                        class="bg-white rounded-xl p-6 shadow-lg transform transition hover:scale-105"
+                        data-aos="fade-up" data-aos-delay="500">
+                        <div class="flex items-center mb-4">
+                            <div
+                                class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="binary"
+                                    class="w-6 h-6 text-yellow-500"></i>
+                            </div>
+                            <h3
+                                class="text-xl font-bold text-gray-800">Ingénierie
+                                des Données</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Concevez et implémentez
+                            des architectures de données robustes et
+                            évolutives.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">ETL</span>
+                            <span
+                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Data
+                                Warehousing</span>
+                            <span
+                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Data
+                                Pipelines</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pays Membres Section -->
+        <section id="pays" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2
+                    class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800"
+                    data-aos="fade-up">
+                    Pays <span class="text-yellow-500">Membres</span> de l'IAI
+                </h2>
+
+                <div
+                    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                    <!-- Gabon -->
+                    <div
+                        class="country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md"
+                        data-aos="zoom-in" data-aos-delay="100">
+                        <div
+                            class=" flex items-center justify-center mx-auto mb-3">
+                            <img src="assets/drapeau-gabonais.png" alt
+                                class="w-16 h-16 bg-yellow-100 rounded-full">
+                        </div>
+                        <h3 class="font-semibold text-gray-800">Gabon</h3>
+                        <p class="text-sm text-gray-600">Siège</p>
+                    </div>
+
+                    <!-- Burkina Faso -->
+                    <div
+                        class="country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md"
+                        data-aos="zoom-in" data-aos-delay="200">
+                        <div
+                            class=" flex items-center justify-center mx-auto mb-3">
+                            <img src="assets/monde.png" alt
+                                class="w-16 h-16 bg-yellow-100 rounded-full">
+                        </div>
+                        <h3 class="font-semibold text-gray-800">Burkina
+                            Faso</h3>
+                    </div>
+
+                    <!-- Cameroun -->
+                    <div
+                        class="country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md"
+                        data-aos="zoom-in" data-aos-delay="250">
+                        <div
+                            class=" flex items-center justify-center mx-auto mb-3">
+                            <img src="assets/cameroun.png" alt
+                                class="w-16 h-16 bg-yellow-100 rounded-full">
+                        </div>
+                        <h3 class="font-semibold text-gray-800">Cameroun</h3>
+                        <p class="text-sm text-gray-600">Représentation</p>
+                    </div>
+
+                    <!-- Centrafrique -->
+                    <div
+                        class="country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md"
+                        data-aos="zoom-in" data-aos-delay="300">
+                        <div
+                            class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i data-lucide="flag"
+                                class="w-8 h-8 text-yellow-500"></i>
+                        </div>
+                        <h3
+                            class="font-semibold text-gray-800">Centrafrique</h3>
+                    </div>
+
+                    <!-- Côte d'Ivoire -->
+                    <div
+                        class="country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md"
+                        data-aos="zoom-in" data-aos-delay="350">
+                        <div
+                            class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <img src="assets/cote-divoire.png" alt>
+                        </div>
+                        <h3 class="font-semibold text-gray-800">Côte
+                            d'Ivoire</h3>
+                    </div>
+
+                    <!-- Congo -->
+                    <div
+                        class="country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md"
+                        data-aos="zoom-in" data-aos-delay="400">
+                        <div
+                            class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <img
+                                src="assets/republique-democratique-du-congo.png"
+                                alt>
+                        </div>
+                        <h3 class="font-semibold text-gray-800">République du
+                            Congo</h3>
+                    </div>
+
+                    <!-- Niger -->
+                    <div
+                        class="country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md"
+                        data-aos="zoom-in" data-aos-delay="450">
+                        <div
+                            class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <img src="assets/niger.png" alt>
+                        </div>
+                        <h3 class="font-semibold text-gray-800">Niger</h3>
+                        <p class="text-sm text-gray-600">Représentation</p>
+                    </div>
+
+                    <!-- Sénégal -->
+                    <div
+                        class="country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md"
+                        data-aos="zoom-in" data-aos-delay="500">
+                        <div
+                            class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <img src="assets/senegal.png" alt>
+                        </div>
+                        <h3 class="font-semibold text-gray-800">Sénégal</h3>
+                    </div>
+
+                    <!-- Tchad -->
+                    <div
+                        class="country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md"
+                        data-aos="zoom-in" data-aos-delay="550">
+                        <div
+                            class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <img src="assets/tchad.png" alt>
+                        </div>
+                        <h3 class="font-semibold text-gray-800">Tchad</h3>
+                    </div>
+
+                    <!-- Togo -->
+                    <div
+                        class="country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md"
+                        data-aos="zoom-in" data-aos-delay="600">
+                        <div
+                            class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <img src="assets/aller.png" alt>
+                        </div>
+                        <h3 class="font-semibold text-gray-800">Togo</h3>
+                        <p class="text-sm text-gray-600">Représentation</p>
+                    </div>
+
+                    <!-- Congo Brazzaville -->
+                    <div
+                        class="country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md"
+                        data-aos="zoom-in" data-aos-delay="650">
+                        <div
+                            class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <img src="assets/drapeau.png" alt>
+                        </div>
+                        <h3 class="font-semibold text-gray-800">Congo
+                            Brazzaville</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vie Étudiante Section -->
+        <section id="vie-etudiante" class="py-20 bg-yellow-50">
+            <div class="container mx-auto px-6">
+                <h2
+                    class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800"
+                    data-aos="fade-up">
+                    Vie <span class="text-yellow-500">Étudiante</span> à l'IAI
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Internat -->
+                    <div class="glassmorphism rounded-xl p-6 shadow-lg"
+                        data-aos="fade-right">
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="home"
+                                    class="w-8 h-8 text-yellow-500"></i>
+                            </div>
+                            <h3
+                                class="text-2xl font-bold text-gray-800">Internat</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">L'IAI dispose d'un
+                            internat moderne et confortable pour accueillir les
+                            étudiants venant de différents pays.</p>
+                        <p class="text-gray-600">Les chambres sont équipées de
+                            toutes les commodités nécessaires pour un séjour
+                            agréable et propice aux études.</p>
+                    </div>
+
+                    <!-- Restaurant Universitaire -->
+                    <div class="glassmorphism rounded-xl p-6 shadow-lg"
+                        data-aos="fade-left">
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="utensils"
+                                    class="w-8 h-8 text-yellow-500"></i>
+                            </div>
+                            <h3
+                                class="text-2xl font-bold text-gray-800">Restaurant
+                                Universitaire</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Géré par le CNOU, le
+                            restaurant universitaire propose des repas
+                            équilibrés et variés à des prix accessibles.</p>
+                        <p class="text-gray-600">Ouvert du lundi au samedi, il
+                            est un lieu de convivialité où les étudiants se
+                            retrouvent entre cours.</p>
+                    </div>
+
+                    <!-- Activités Extra-scolaires -->
+                    <div class="glassmorphism rounded-xl p-6 shadow-lg"
+                        data-aos="fade-right">
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="users"
+                                    class="w-8 h-8 text-yellow-500"></i>
+                            </div>
+                            <h3
+                                class="text-2xl font-bold text-gray-800">Activités
+                                Extra-scolaires</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">L'IAI encourage les
+                            activités parascolaires avec plusieurs clubs :
+                            football, basket, informatique, etc.</p>
+                        <p class="text-gray-600">La semaine de l'étudiant est un
+                            moment fort avec des compétitions, des conférences
+                            et des soirées chic.</p>
+                    </div>
+
+                    <!-- Partenariats -->
+                    <div class="glassmorphism rounded-xl p-6 shadow-lg"
+                        data-aos="fade-left">
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="handshake"
+                                    class="w-8 h-8 text-yellow-500"></i>
+                            </div>
+                            <h3
+                                class="text-2xl font-bold text-gray-800">Partenariats
+                                Professionnels</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">L'IAI a développé un
+                            réseau de partenariats avec des entreprises
+                            technologiques et diverses pour faciliter
+                            l'insertion professionnelle.</p>
+                        <p class="text-gray-600">Stages, alternance et
+                            recrutement sont facilités grâce à ce réseau
+                            étendu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-yellow-400 text-gray-800 py-12">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">IAI Gabon</h3>
+                        <p class="mb-4">Institut Africain d'Informatique - Siège
+                            à Libreville, Gabon</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="hover:text-yellow-700">
+                                <i data-lucide="facebook" class="w-6 h-6"></i>
+                            </a>
+                            <a href="#" class="hover:text-yellow-700">
+                                <i data-lucide="twitter" class="w-6 h-6"></i>
+                            </a>
+                            <a href="#" class="hover:text-yellow-700">
+                                <i data-lucide="linkedin" class="w-6 h-6"></i>
+                            </a>
+                            <a href="#" class="hover:text-yellow-700">
+                                <i data-lucide="instagram" class="w-6 h-6"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Liens Utiles</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#"
+                                    class="hover:text-yellow-700">Admissions</a></li>
+                            <li><a href="#"
+                                    class="hover:text-yellow-700">Programmes</a></li>
+                            <li><a href="#" class="hover:text-yellow-700">Vie
+                                    Étudiante</a></li>
+                            <li><a href="#"
+                                    class="hover:text-yellow-700">Partenariats</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Contact</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i data-lucide="map-pin"
+                                    class="w-5 h-5 mr-2"></i>
+                                <span>Libreville, Gabon</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="mail" class="w-5 h-5 mr-2"></i>
+                                <span>contact@iai-gabon.edu</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+                                <span>+241 XX XX XX XX</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+                        <p class="mb-4">Abonnez-vous pour recevoir nos
+                            actualités</p>
+                        <div class="flex">
+                            <input type="email" placeholder="Votre email"
+                                class="px-4 py-2 rounded-l-lg w-full focus:outline-none">
+                            <button
+                                class="bg-yellow-600 text-white px-4 py-2 rounded-r-lg hover:bg-yellow-700">
+                                <i data-lucide="send" class="w-5 h-5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-yellow-500 mt-8 pt-8 text-center">
+                    <p>&copy; 2023 IAI Gabon - Tous droits réservés</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="assets/js/script.js"> </script>
+    </body>
+</html>

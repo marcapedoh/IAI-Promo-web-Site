@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IAI Gabon - Statistiques</title>
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Framer Motion CDN -->
+        <script
+            src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
+        <!-- Lucide Icons CDN -->
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <!-- AOS Animation CDN -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- Typed.js for auto typing text -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <link rel="stylesheet" href="assets/css/style2.css">
+    </head>
+    <body class="bg-white font-sans">
+        <!-- Navigation -->
+        <nav class="bg-yellow-400 text-white shadow-lg">
+            <div
+                class="container mx-auto px-6 py-3 flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div
+                        class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                        <img src="assets/Iai-togo.jpg"
+                            class="w-12 h-12 bg-white rounded-full" />
+                    </div>
+                    <span class="text-xl font-bold text-gray-800">IAI (Institut
+                        Africain d'Informatique)
+                    </span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html"
+                        class="text-gray-800 font-semibold hover:text-yellow-600">Accueil</a>
+                    <a href="#stats"
+                        class="text-gray-800 font-semibold hover:text-yellow-600">Statistiques</a>
+                    <a href="#temoignages"
+                        class="text-gray-800 font-semibold hover:text-yellow-600">Témoignages</a>
+                    <a href="#partenariats"
+                        class="text-gray-800 font-semibold hover:text-yellow-600">Partenariats</a>
+                    <a href="page3.html"
+                        class="bg-yellow-500 px-4 py-2 rounded-lg text-white font-semibold hover:bg-yellow-600 transition">Clubs
+                        & Événements</a>
+                </div>
+                <button class="md:hidden">
+                    <i data-lucide="menu" class="w-6 h-6 text-gray-800"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section
+            class="relative py-20 bg-gradient-to-r from-yellow-100 to-yellow-50 overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div
+                    class="absolute top-0 left-0 w-32 h-32 bg-yellow-400 rounded-full filter blur-xl"></div>
+                <div
+                    class="absolute bottom-0 right-0 w-64 h-64 bg-yellow-500 rounded-full filter blur-xl"></div>
+            </div>
+
+            <div class="container mx-auto px-6 z-10 text-center"
+                data-aos="fade-up">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-gray-800">
+                    <span class="text-yellow-500">Statistiques</span> &
+                    Informations
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Découvrez en chiffres et en témoignages la vie à l'Institut
+                    Africain d'Informatique
+                </p>
+            </div>
+        </section>
+
+        <!-- Statistiques Section -->
+        <section id="stats" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2
+                    class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800"
+                    data-aos="fade-up">
+                    L'IAI <span class="text-yellow-500">en Chiffres</span>
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                    <!-- Étudiants Total -->
+                    <div
+                        class="glassmorphism rounded-xl p-8 text-center shadow-lg"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <div
+                            class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="users"
+                                class="w-10 h-10 text-yellow-500"></i>
+                        </div>
+                        <h3 class="text-5xl font-bold mb-2 text-gray-800">
+                            <span class="counter" data-target="1250">0</span>+
+                        </h3>
+                        <p class="text-xl text-gray-600">Étudiants</p>
+                    </div>
+
+                    <!-- Pays Représentés -->
+                    <div
+                        class="glassmorphism rounded-xl p-8 text-center shadow-lg"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <div
+                            class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="globe"
+                                class="w-10 h-10 text-yellow-500"></i>
+                        </div>
+                        <h3 class="text-5xl font-bold mb-2 text-gray-800">
+                            <span class="counter" data-target="12">0</span>
+                        </h3>
+                        <p class="text-xl text-gray-600">Pays Membres</p>
+                    </div>
+
+                    <!-- Taux d'Insertion -->
+                    <div
+                        class="glassmorphism rounded-xl p-8 text-center shadow-lg"
+                        data-aos="fade-up" data-aos-delay="300">
+                        <div
+                            class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="briefcase"
+                                class="w-10 h-10 text-yellow-500"></i>
+                        </div>
+                        <h3 class="text-5xl font-bold mb-2 text-gray-800">
+                            <span class="counter" data-target="85">0</span>%
+                        </h3>
+                        <p class="text-xl text-gray-600">Taux d'Insertion</p>
+                    </div>
+                </div>
+
+                <!-- Auto Typing Text -->
+                <div class="max-w-4xl mx-auto text-center mb-16"
+                    data-aos="fade-up">
+                    <div
+                        class="text-2xl md:text-3xl font-semibold text-gray-800 h-20 flex items-center justify-center">
+                        <span id="typed-text" class="text-yellow-500"></span>
+                    </div>
+                </div>
+
+                <!-- Répartition par Filière -->
+                <div class="glassmorphism rounded-xl p-8 shadow-lg mb-16"
+                    data-aos="fade-up">
+                    <h3
+                        class="text-2xl font-bold mb-6 text-gray-800 text-center">Répartition
+                        des Étudiants par Filière</h3>
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="bg-yellow-50 rounded-lg p-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">AP</h4>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div class="bg-yellow-500 h-4 rounded-full"
+                                    style="width: 30%"></div>
+                            </div>
+                            <p class="text-right text-sm text-gray-600 mt-1">30%
+                                (125 étudiants)</p>
+                        </div>
+                        <div class="bg-yellow-50 rounded-lg p-4">
+                            <h4
+                                class="font-semibold text-gray-800 mb-2">MIAGE</h4>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div class="bg-yellow-500 h-4 rounded-full"
+                                    style="width: 15%"></div>
+                            </div>
+                            <p class="text-right text-sm text-gray-600 mt-1">15%
+                                (42 étudiants)</p>
+                        </div>
+                        <div class="bg-yellow-50 rounded-lg p-4">
+                            <h4
+                                class="font-semibold text-gray-800 mb-2">Master</h4>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div class="bg-yellow-500 h-4 rounded-full"
+                                    style="width: 10%"></div>
+                            </div>
+                            <p class="text-right text-sm text-gray-600 mt-1">10%
+                                (30 étudiants)</p>
+                        </div>
+                        <div class="bg-yellow-50 rounded-lg p-4">
+                            <h4
+                                class="font-semibold text-gray-800 mb-2">Ingénieur</h4>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div class="bg-yellow-500 h-4 rounded-full"
+                                    style="width: 23%"></div>
+                            </div>
+                            <p class="text-right text-sm text-gray-600 mt-1">23%
+                                (80 étudiants)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Témoignages Section -->
+        <section id="temoignages" class="py-20 bg-yellow-50">
+            <div class="container mx-auto px-6">
+                <h2
+                    class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800"
+                    data-aos="fade-up">
+                    Témoignages <span class="text-yellow-500">Étudiants</span>
+                </h2>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Témoignage 1 (Positif) -->
+                    <div
+                        class="testimonial-card bg-white rounded-xl p-6 shadow-lg"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center mb-4">
+                            <div
+                                class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="user"
+                                    class="w-6 h-6 text-yellow-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Jean K.</h4>
+                                <p class="text-sm text-gray-600">Master
+                                    IA-DataScience</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-3">
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500 fill-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500 fill-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500 fill-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500 fill-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500 fill-yellow-500"></i>
+                        </div>
+                        <p class="text-gray-600 italic">
+                            "L'IAI m'a offert une formation d'excellence avec des enseignants compétents et disponibles. Les infrastructures sont modernes et l'ambiance est propice à l'apprentissage. Je recommande vivement !"
+                        </p>
+                    </div>
+
+                    <!-- Témoignage 2 (Négatif) -->
+                    <div
+                        class="testimonial-card bg-white rounded-xl p-6 shadow-lg"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-center mb-4">
+                            <div
+                                class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="user"
+                                    class="w-6 h-6 text-yellow-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Aïcha
+                                    T.</h4>
+                                <p class="text-sm text-gray-600">AP 2ème
+                                    année</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-3">
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500 fill-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500 fill-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500"></i>
+                        </div>
+                        <p class="text-gray-600 italic">
+                            "Certains équipements sont obsolètes et les salles surchargées. La qualité de l'enseignement varie beaucoup selon les professeurs. Dommage car le potentiel est là."
+                        </p>
+                    </div>
+
+                    <!-- Témoignage 3 (Positif) -->
+                    <div
+                        class="testimonial-card bg-white rounded-xl p-6 shadow-lg"
+                        data-aos="fade-up" data-aos-delay="300">
+                        <div class="flex items-center mb-4">
+                            <div
+                                class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="user"
+                                    class="w-6 h-6 text-yellow-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Mohamed
+                                    D.</h4>
+                                <p class="text-sm text-gray-600">Ingénieur
+                                    DevOps</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-3">
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500 fill-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500 fill-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500 fill-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500 fill-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500"></i>
+                        </div>
+                        <p class="text-gray-600 italic">
+                            "Excellent réseau professionnel grâce aux partenariats de l'IAI. J'ai décroché un stage puis un CDI dans une grande entreprise avant même d'avoir mon diplôme."
+                        </p>
+                    </div>
+
+                    <!-- Témoignage 4 (Mixte) -->
+                    <div
+                        class="testimonial-card bg-white rounded-xl p-6 shadow-lg"
+                        data-aos="fade-up" data-aos-delay="400">
+                        <div class="flex items-center mb-4">
+                            <div
+                                class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="user"
+                                    class="w-6 h-6 text-yellow-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Fatou
+                                    N.</h4>
+                                <p class="text-sm text-gray-600">MIAGE 3ème
+                                    année</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-3">
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500 fill-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500 fill-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500 fill-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500"></i>
+                        </div>
+                        <p class="text-gray-600 italic">
+                            "Bon équilibre entre théorie et pratique. La vie étudiante est animée mais l'internat pourrait être mieux entretenu. Globalement satisfaite de mon choix."
+                        </p>
+                    </div>
+
+                    <!-- Témoignage 5 (Positif) -->
+                    <div
+                        class="testimonial-card bg-white rounded-xl p-6 shadow-lg"
+                        data-aos="fade-up" data-aos-delay="500">
+                        <div class="flex items-center mb-4">
+                            <div
+                                class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="user"
+                                    class="w-6 h-6 text-yellow-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Samuel
+                                    K.</h4>
+                                <p class="text-sm text-gray-600">Master Big
+                                    Data</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-3">
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500 fill-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500 fill-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500 fill-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500 fill-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500 fill-yellow-500"></i>
+                        </div>
+                        <p class="text-gray-600 italic">
+                            "Formation pointue en Big Data avec des enseignants qui sont aussi des professionnels en activité. Les projets concrets nous préparent vraiment au marché du travail."
+                        </p>
+                    </div>
+
+                    <!-- Témoignage 6 (Négatif) -->
+                    <div
+                        class="testimonial-card bg-white rounded-xl p-6 shadow-lg"
+                        data-aos="fade-up" data-aos-delay="600">
+                        <div class="flex items-center mb-4">
+                            <div
+                                class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="user"
+                                    class="w-6 h-6 text-yellow-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Rachel
+                                    M.</h4>
+                                <p class="text-sm text-gray-600">Ingénieur
+                                    Cybersécurité</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-3">
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500 fill-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500"></i>
+                            <i data-lucide="star"
+                                class="w-5 h-5 text-yellow-500"></i>
+                        </div>
+                        <p class="text-gray-600 italic">
+                            "Déçu par le manque de matériel pour les TP de sécurité. Certains cours sont trop théoriques. Heureusement que j'ai pu compléter par des certifications en ligne."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partenariats Section -->
+        <section id="partenariats" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2
+                    class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800"
+                    data-aos="fade-up">
+                    Nos <span class="text-yellow-500">Partenariats</span>
+                    Internationaux
+                </h2>
+
+                <div
+                    class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-8 mb-16">
+                    <!-- Montbéliard -->
+                    <div
+                        class="course-card bg-white rounded-xl p-6 shadow-lg text-center cursor-pointer"
+                        onclick="showPartnerInfo('montbeliard')"
+                        data-aos="zoom-in" data-aos-delay="100">
+                        <div class="w-20 h-20 mx-auto mb-4">
+                            <img
+                                src="https://cdn.worldvectorlogo.com/logos/utbm.svg"
+                                alt="Montbéliard"
+                                class="partner-logo w-full h-full object-contain">
+                        </div>
+                        <h3 class="font-bold text-gray-800">Université de
+                            Montbéliard</h3>
+                    </div>
+
+                    <!-- Polytechnique Nice -->
+                    <div
+                        class="course-card bg-white rounded-xl p-6 shadow-lg text-center cursor-pointer"
+                        onclick="showPartnerInfo('nice')" data-aos="zoom-in"
+                        data-aos-delay="200">
+                        <div class="w-20 h-20 mx-auto mb-4">
+                            <img
+                                src="https://i.hellowork.com/2OmzHKG3jo3I4eJrZDZp03iFRg7UJXctiOD3imCFq3I/w:300/h:200/rt:fit/g:sm/bG9jYWw6Ly8vZWR0ZWNoL2V0YWJsaXNzZW1lbnQvbG9nby80OTkxLzNiYWYwNjkyLWIwYmQtNGM4Yi1hMzU0LWZlNzQzYTUwNThkMC5zdmc.svg"
+                                alt="Polytech Nice"
+                                class="partner-logo w-full h-full object-contain">
+                        </div>
+                        <h3 class="font-bold text-gray-800">Polytechnique Nice
+                            Sophia</h3>
+                    </div>
+
+                </div>
+
+                <!-- Info Partenaire (hidden by default) -->
+                <div id="partner-info"
+                    class="glassmorphism rounded-xl p-8 shadow-lg mb-16 hidden"
+                    data-aos="fade-up">
+                    <div class="flex justify-between items-start mb-6">
+                        <h3 id="partner-name"
+                            class="text-2xl font-bold text-gray-800"></h3>
+                        <button onclick="hidePartnerInfo()"
+                            class="text-gray-500 hover:text-gray-700">
+                            <i data-lucide="x" class="w-6 h-6"></i>
+                        </button>
+                    </div>
+                    <div id="partner-content" class="text-gray-600">
+                        <!-- Content will be loaded by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Partenariats Professionnels -->
+                <h3 class="text-2xl font-bold text-center mb-8 text-gray-800"
+                    data-aos="fade-up">Partenariats Professionnels</h3>
+                <div
+                    class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mb-16">
+                    <div class="partner-logo">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Orange_logo.svg"
+                            alt="Orange" class="w-full h-16 object-contain">
+                    </div>
+                    <div class="partner-logo">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvjprybczXjAGqMKIQCWB17enuKvo4OvyRfg&s"
+                            alt="MTN" class="w-full h-16 object-contain">
+                    </div>
+                    <div class="partner-logo">
+                        <img
+                            src="https://toppng.com/uploads/preview/google-logo-png-hd-11659866438lpwuqaonqq.png"
+                            alt="Google" class="w-full h-16 object-contain">
+                    </div>
+                    <div class="partner-logo">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Microsoft_icon.svg/2048px-Microsoft_icon.svg.png"
+                            alt="Microsoft" class="w-full h-16 object-contain">
+                    </div>
+                    <div class="partner-logo">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFRWT-hcJ-f4BG_ugvMwfcUCMKFsfCaC3kaw&s"
+                            alt="IBM" class="w-full h-16 object-contain">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Parcours Détails Section -->
+        <section class="py-20 bg-yellow-50">
+            <div class="container mx-auto px-6">
+                <h2
+                    class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800"
+                    data-aos="fade-up">
+                    Détails des <span class="text-yellow-500">Parcours</span>
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                    <!-- AP -->
+                    <div class="course-card bg-white rounded-xl p-6 shadow-lg"
+                        data-aos="fade-right">
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="code"
+                                    class="w-8 h-8 text-yellow-500"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800">AP
+                                (Analyste Programmeur)</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Formation intensive en
+                            développement logiciel et conception
+                            d'applications.</p>
+                        <div class="mb-6">
+                            <h4
+                                class="font-semibold text-gray-800 mb-2">Débouchés
+                                Professionnels:</h4>
+                            <ul
+                                class="list-disc list-inside text-gray-600 space-y-1">
+                                <li>Développeur d'applications</li>
+                                <li>Analyste programmeur</li>
+                                <li>Concepteur logiciel</li>
+                                <li>Technicien supérieur en informatique</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4
+                                class="font-semibold text-gray-800 mb-2">Programme
+                                Clé:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Algorithmique</span>
+                                <span
+                                    class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Bases
+                                    de données</span>
+                                <span
+                                    class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Développement
+                                    Web</span>
+                                <span
+                                    class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">POO</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MIAGE -->
+                    <div class="course-card bg-white rounded-xl p-6 shadow-lg"
+                        data-aos="fade-left">
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="briefcase"
+                                    class="w-8 h-8 text-yellow-500"></i>
+                            </div>
+                            <h3
+                                class="text-2xl font-bold text-gray-800">MIAGE</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Méthodes Informatiques
+                            Appliquées à la Gestion des Entreprises.</p>
+                        <div class="mb-6">
+                            <h4
+                                class="font-semibold text-gray-800 mb-2">Débouchés
+                                Professionnels:</h4>
+                            <ul
+                                class="list-disc list-inside text-gray-600 space-y-1">
+                                <li>Chef de projet informatique</li>
+                                <li>Consultant ERP</li>
+                                <li>Administrateur de bases de données</li>
+                                <li>Responsable SI</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4
+                                class="font-semibold text-gray-800 mb-2">Programme
+                                Clé:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Gestion
+                                    de projet</span>
+                                <span
+                                    class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">ERP</span>
+                                <span
+                                    class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Business
+                                    Intelligence</span>
+                                <span
+                                    class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Systèmes
+                                    d'information</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Master -->
+                    <div class="course-card bg-white rounded-xl p-6 shadow-lg"
+                        data-aos="fade-right">
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="graduation-cap"
+                                    class="w-8 h-8 text-yellow-500"></i>
+                            </div>
+                            <h3
+                                class="text-2xl font-bold text-gray-800">Master</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Spécialisations avancées
+                            en technologies de l'information.</p>
+                        <div class="mb-6">
+                            <h4
+                                class="font-semibold text-gray-800 mb-2">Débouchés
+                                Professionnels (par filière):</h4>
+                            <ul
+                                class="list-disc list-inside text-gray-600 space-y-1">
+                                <li><strong>IA-DataScience:</strong> Data
+                                    Scientist, Expert en ML</li>
+                                <li><strong>Big Data:</strong> Architecte Big
+                                    Data, Data Engineer</li>
+                                <li><strong>CyberSécurité:</strong> Pentester,
+                                    Responsable Sécurité</li>
+                                <li><strong>DevOps:</strong> Ingénieur DevOps,
+                                    SRE</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4
+                                class="font-semibold text-gray-800 mb-2">Programmes
+                                Clés:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Recherche</span>
+                                <span
+                                    class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Projets
+                                    avancés</span>
+                                <span
+                                    class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Stage
+                                    long</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ING -->
+                    <div class="course-card bg-white rounded-xl p-6 shadow-lg"
+                        data-aos="fade-left">
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="cpu"
+                                    class="w-8 h-8 text-yellow-500"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800">Cycle
+                                d'Ingénieur</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Formation d'excellence
+                            pour devenir ingénieur en informatique.</p>
+                        <div class="mb-6">
+                            <h4
+                                class="font-semibold text-gray-800 mb-2">Débouchés
+                                Professionnels (par filière):</h4>
+                            <ul
+                                class="list-disc list-inside text-gray-600 space-y-1">
+                                <li><strong>IA-DataScience:</strong> Ingénieur
+                                    IA, Chief Data Officer</li>
+                                <li><strong>Big Data:</strong> Architecte
+                                    solutions Big Data</li>
+                                <li><strong>Ingénierie des données:</strong>
+                                    Data Architect</li>
+                                <li><strong>CyberSécurité:</strong> Responsable
+                                    Sécurité SI</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4
+                                class="font-semibold text-gray-800 mb-2">Programmes
+                                Clés:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Tronc
+                                    commun solide</span>
+                                <span
+                                    class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Spécialisation
+                                    poussée</span>
+                                <span
+                                    class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Projet
+                                    de fin d'études</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tableau Étudiants -->
+                <h3 class="text-2xl font-bold text-center mb-8 text-gray-800"
+                    data-aos="fade-up">Quelques Étudiants de l'IAI</h3>
+                <div
+                    class="glassmorphism rounded-xl p-6 shadow-lg overflow-x-auto"
+                    data-aos="fade-up">
+                    <table class="student-table">
+                        <thead>
+                            <tr>
+                                <th>Nom</th>
+                                <th>Parcours</th>
+                                <th>Filière</th>
+                                <th>Année</th>
+                                <th>Pays</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Koffi Mensah</td>
+                                <td>ING</td>
+                                <td>Big Data</td>
+                                <td>4ème année</td>
+                                <td>Côte d'Ivoire</td>
+                            </tr>
+                            <tr>
+                                <td>Amina Diallo</td>
+                                <td>Master</td>
+                                <td>IA-DataScience</td>
+                                <td>1ère année</td>
+                                <td>Sénégal</td>
+                            </tr>
+                            <tr>
+                                <td>Jean-Baptiste Okala</td>
+                                <td>AP</td>
+                                <td>-</td>
+                                <td>2ème année</td>
+                                <td>Cameroun</td>
+                            </tr>
+                            <tr>
+                                <td>Fatou Ndiaye</td>
+                                <td>MIAGE</td>
+                                <td>-</td>
+                                <td>3ème année</td>
+                                <td>Burkina Faso</td>
+                            </tr>
+                            <tr>
+                                <td>Yannick Mboumba</td>
+                                <td>ING</td>
+                                <td>CyberSécurité</td>
+                                <td>5ème année</td>
+                                <td>Gabon</td>
+                            </tr>
+                            <tr>
+                                <td>Sarah Toure</td>
+                                <td>Master</td>
+                                <td>DevOps</td>
+                                <td>2ème année</td>
+                                <td>Mali</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 bg-yellow-400">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800"
+                    data-aos="fade-up">
+                    Prêt à rejoindre la communauté IAI ?
+                </h2>
+                <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto"
+                    data-aos="fade-up" data-aos-delay="100">
+                    Découvrez les clubs étudiants et la vie sur le campus en
+                    continuant votre exploration.
+                </p>
+                <a href="page3.html"
+                    class="inline-block bg-white text-yellow-600 font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg"
+                    data-aos="fade-up" data-aos-delay="200">
+                    Découvrir les Clubs
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-yellow-500 text-gray-800 py-12">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">IAI Gabon</h3>
+                        <p class="mb-4">Institut Africain d'Informatique - Siège
+                            à Libreville, Gabon</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="hover:text-yellow-700">
+                                <i data-lucide="facebook" class="w-6 h-6"></i>
+                            </a>
+                            <a href="#" class="hover:text-yellow-700">
+                                <i data-lucide="twitter" class="w-6 h-6"></i>
+                            </a>
+                            <a href="#" class="hover:text-yellow-700">
+                                <i data-lucide="linkedin" class="w-6 h-6"></i>
+                            </a>
+                            <a href="#" class="hover:text-yellow-700">
+                                <i data-lucide="instagram" class="w-6 h-6"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Liens Utiles</h3>
+                        <ul class="space-y-2">
+                            <li><a href="index.html"
+                                    class="hover:text-yellow-700">Accueil</a></li>
+                            <li><a href="#stats"
+                                    class="hover:text-yellow-700">Statistiques</a></li>
+                            <li><a href="#temoignages"
+                                    class="hover:text-yellow-700">Témoignages</a></li>
+                            <li><a href="#partenariats"
+                                    class="hover:text-yellow-700">Partenariats</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Contact</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i data-lucide="map-pin"
+                                    class="w-5 h-5 mr-2"></i>
+                                <span>Libreville, Gabon</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="mail" class="w-5 h-5 mr-2"></i>
+                                <span>contact@iai-gabon.edu</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+                                <span>+241 XX XX XX XX</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Navigation</h3>
+                        <ul class="space-y-2">
+                            <li><a href="index.html"
+                                    class="hover:text-yellow-700">Page
+                                    d'accueil</a></li>
+                            <li><a href="page2.html"
+                                    class="hover:text-yellow-700">Statistiques</a></li>
+                            <li><a href="page3.html"
+                                    class="hover:text-yellow-700">Clubs &
+                                    Événements</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-yellow-600 mt-8 pt-8 text-center">
+                    <p>&copy; 2023 IAI Gabon - Tous droits réservés</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="assets/js/script2.js"></script>
+    </body>
+</html>
