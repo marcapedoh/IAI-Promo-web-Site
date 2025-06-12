@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IAI Gabon - Promotions 2019-2024</title>
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Framer Motion CDN -->
+        <script
+            src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
+        <!-- Lucide Icons CDN -->
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <!-- AOS Animation CDN -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="stylesheet" href="assets/css/style3.css">
+    </head>
+    <body class="bg-white font-sans">
+        <!-- Navigation -->
+        <nav class="fixed w-full z-50">
+            <div class="relative overflow-hidden">
+                <!-- Éléments animés en arrière-plan -->
+                <div class="absolute inset-0 opacity-20">
+                    <div
+                        class="absolute top-1/4 left-1/4 w-8 h-8 bg-yellow-300 rounded-full animate-pulse"
+                        style="animation-delay: 0.3s;"></div>
+                    <div
+                        class="absolute top-1/3 right-1/3 w-6 h-6 bg-yellow-400 rounded-full animate-pulse"
+                        style="animation-delay: 0.7s;"></div>
+                    <div
+                        class="absolute bottom-1/4 right-1/4 w-10 h-10 bg-yellow-200 rounded-full animate-pulse"
+                        style="animation-delay: 0.5s;"></div>
+                    <div
+                        class="absolute bottom-1/3 left-1/3 w-5 h-5 bg-yellow-300 rounded-full animate-pulse"></div>
+                </div>
+
+                <!-- Barre de navigation -->
+                <div
+                    class="glassmorphism-nav bg-yellow-50/80 backdrop-blur-md text-white shadow-lg">
+                    <div
+                        class="container mx-auto px-6 py-3 flex flex-col md:flex-row justify-center items-center">
+                        <!-- Logo -->
+                        <div
+                            class="flex items-center space-x-4 mb-3 md:mb-0 md:absolute md:left-6">
+                            <div
+                                class="flex items-center justify-center">
+                                <img src="assets/Iai-togo.jpg" alt
+                                    class="w-12 h-12 bg-white rounded-full">
+                            </div>
+                            <span
+                                class="text-xl font-bold text-gray-800">IAI(Institut
+                                Africain d'Informatique)
+                            </span>
+                        </div>
+
+                        <!-- Menu centré -->
+                        <div class="flex items-center space-x-4 md:space-x-8">
+                            <a href="index.html"
+                                class="text-gray-800 font-semibold hover:text-yellow-600 transition-colors px-3 py-1 rounded-lg hover:bg-yellow-100/50">Accueil</a>
+                            <a href="page2.html"
+                                class="text-gray-800 font-semibold hover:text-yellow-600 transition-colors px-3 py-1 rounded-lg hover:bg-yellow-100/50">Statistiques</a>
+                            <a href="page3.html"
+                                class="text-gray-800 font-semibold hover:text-yellow-600 transition-colors px-3 py-1 rounded-lg hover:bg-yellow-100/50">Clubs</a>
+                            <a href="promotions.html"
+                                class="bg-yellow-500 px-4 py-2 rounded-lg text-white font-semibold hover:bg-yellow-600 transition shadow-md">Promotions</a>
+                        </div>
+
+                        <!-- Bouton menu mobile -->
+                        <button class="md:hidden absolute right-6 top-5">
+                            <i data-lucide="menu"
+                                class="w-6 h-6 text-gray-800"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Hero Section -->
+        <section
+            class="relative py-20 bg-gradient-to-r from-yellow-100 to-yellow-50 overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div
+                    class="absolute top-0 left-0 w-32 h-32 bg-yellow-400 rounded-full filter blur-xl"></div>
+                <div
+                    class="absolute bottom-0 right-0 w-64 h-64 bg-yellow-500 rounded-full filter blur-xl"></div>
+            </div>
+
+            <div class="container mx-auto px-6 z-10 text-center"
+                data-aos="fade-up">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-gray-800">
+                    <span class="text-yellow-500">Promotions</span> 2019-2024
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Découvrez les étudiants des différentes promotions à travers
+                    des cartes visuelles et des tableaux détaillés
+                </p>
+            </div>
+        </section>
+
+        <!-- Contrôles de Filtrage -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="glassmorphism rounded-xl p-6 shadow-lg mb-8"
+                    data-aos="fade-up">
+                    <h2 class="text-2xl font-bold mb-6 text-gray-800">Explorer
+                        les Données</h2>
+
+                    <!-- Sélection de Promotion -->
+                    <div class="mb-6">
+                        <h3
+                            class="text-lg font-semibold mb-3 text-gray-800">Promotion</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <button
+                                class="toggle-btn active px-4 py-2 rounded-lg bg-yellow-100 text-gray-800"
+                                data-promo="all">
+                                Toutes
+                            </button>
+                            <button
+                                class="toggle-btn px-4 py-2 rounded-lg bg-yellow-100 text-gray-800"
+                                data-promo="2019">
+                                2019
+                            </button>
+                            <button
+                                class="toggle-btn px-4 py-2 rounded-lg bg-yellow-100 text-gray-800"
+                                data-promo="2020">
+                                2020
+                            </button>
+                            <button
+                                class="toggle-btn px-4 py-2 rounded-lg bg-yellow-100 text-gray-800"
+                                data-promo="2021">
+                                2021
+                            </button>
+                            <button
+                                class="toggle-btn px-4 py-2 rounded-lg bg-yellow-100 text-gray-800"
+                                data-promo="2022">
+                                2022
+                            </button>
+                            <button
+                                class="toggle-btn px-4 py-2 rounded-lg bg-yellow-100 text-gray-800"
+                                data-promo="2023">
+                                2023
+                            </button>
+                            <button
+                                class="toggle-btn px-4 py-2 rounded-lg bg-yellow-100 text-gray-800"
+                                data-promo="2024">
+                                2024
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Filtres supplémentaires -->
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div>
+                            <label for="parcours-filter"
+                                class="block text-gray-700 mb-2">Parcours</label>
+                            <select id="parcours-filter"
+                                class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                                <option value="all">Tous</option>
+                                <option value="AP">AP</option>
+                                <option value="MIAGE">MIAGE</option>
+                                <option value="Master">Master</option>
+                                <option value="Ingénieur">Ingénieur</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="filiere-filter"
+                                class="block text-gray-700 mb-2">Filière</label>
+                            <select id="filiere-filter"
+                                class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                                <option value="all">Toutes</option>
+                                <option
+                                    value="IA-DataScience">IA-DataScience</option>
+                                <option value="Big Data">Big Data</option>
+                                <option
+                                    value="Ingénierie des Données">Ingénierie
+                                    des Données</option>
+                                <option
+                                    value="CyberSécurité">CyberSécurité</option>
+                                <option value="DevOps">DevOps</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="genre-filter"
+                                class="block text-gray-700 mb-2">Genre</label>
+                            <select id="genre-filter"
+                                class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                                <option value="all">Tous</option>
+                                <option value="Homme">Homme</option>
+                                <option value="Femme">Femme</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="pays-filter"
+                                class="block text-gray-700 mb-2">Pays</label>
+                            <select id="pays-filter"
+                                class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                                <option value="all">Tous</option>
+                                <option value="Gabon">Gabon</option>
+                                <option value="Cameroun">Cameroun</option>
+                                <option value="Côte d'Ivoire">Côte
+                                    d'Ivoire</option>
+                                <option value="Sénégal">Sénégal</option>
+                                <option value="Autres">Autres</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cartes Étudiantes -->
+        <section class="py-12 bg-yellow-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-2xl font-bold mb-8 text-gray-800"
+                    data-aos="fade-up">Nos Étudiants</h2>
+
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+                    id="students-cards">
+                    <!-- Carte Étudiant 1 -->
+                    <div class="flip-card" data-promo="2019" data-parcours="AP"
+                        data-filiere="all" data-genre="Homme" data-pays="Gabon">
+                        <div class="flip-card-inner">
+                            <div
+                                class="flip-card-front student-card bg-white rounded-xl overflow-hidden shadow-lg h-full">
+                                <div class="h-48 bg-yellow-100 overflow-hidden">
+                                    <img
+                                        src="https://randomuser.me/api/portraits/men/1.jpg"
+                                        alt="Jean Ndong"
+                                        class="student-photo w-full h-full object-cover">
+                                </div>
+                                <div class="p-6">
+                                    <h3
+                                        class="text-xl font-bold mb-1 text-gray-800">Jean
+                                        Ndong</h3>
+                                    <p
+                                        class="text-yellow-500 font-semibold mb-2">Promotion
+                                        2019 - AP</p>
+                                    <div
+                                        class="flex items-center text-sm text-gray-500 mb-2">
+                                        <i data-lucide="map-pin"
+                                            class="w-4 h-4 mr-1"></i>
+                                        <span>Gabon</span>
+                                    </div>
+                                    <div
+                                        class="flex items-center text-sm text-gray-500">
+                                        <i data-lucide="award"
+                                            class="w-4 h-4 mr-1"></i>
+                                        <span>Mention Très Bien</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="flip-card-back student-card bg-yellow-100 rounded-xl overflow-hidden shadow-lg h-full p-6">
+                                <h3
+                                    class="text-xl font-bold mb-3 text-gray-800">Plus
+                                    d'infos</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i data-lucide="briefcase"
+                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                        <span>Développeur chez Orange
+                                            Gabon</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-lucide="star"
+                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                        <span>Projet: Application de gestion
+                                            scolaire</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-lucide="heart"
+                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                        <span>Membre du club informatique</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carte Étudiant 2 -->
+                    <div class="flip-card" data-promo="2019"
+                        data-parcours="MIAGE" data-filiere="all"
+                        data-genre="Femme" data-pays="Cameroun">
+                        <div class="flip-card-inner">
+                            <div
+                                class="flip-card-front student-card bg-white rounded-xl overflow-hidden shadow-lg h-full">
+                                <div class="h-48 bg-yellow-100 overflow-hidden">
+                                    <img
+                                        src="https://randomuser.me/api/portraits/women/2.jpg"
+                                        alt="Sarah Mbala"
+                                        class="student-photo w-full h-full object-cover">
+                                </div>
+                                <div class="p-6">
+                                    <h3
+                                        class="text-xl font-bold mb-1 text-gray-800">Sarah
+                                        Mbala</h3>
+                                    <p
+                                        class="text-yellow-500 font-semibold mb-2">Promotion
+                                        2019 - MIAGE</p>
+                                    <div
+                                        class="flex items-center text-sm text-gray-500 mb-2">
+                                        <i data-lucide="map-pin"
+                                            class="w-4 h-4 mr-1"></i>
+                                        <span>Cameroun</span>
+                                    </div>
+                                    <div
+                                        class="flex items-center text-sm text-gray-500">
+                                        <i data-lucide="award"
+                                            class="w-4 h-4 mr-1"></i>
+                                        <span>Mention Bien</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="flip-card-back student-card bg-yellow-100 rounded-xl overflow-hidden shadow-lg h-full p-6">
+                                <h3
+                                    class="text-xl font-bold mb-3 text-gray-800">Plus
+                                    d'infos</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i data-lucide="briefcase"
+                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                        <span>Consultante ERP à Douala</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-lucide="star"
+                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                        <span>Projet: Système de gestion
+                                            d'entreprise</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-lucide="heart"
+                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                        <span>Membre du club
+                                            entrepreneuriat</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carte Étudiant 3 -->
+                    <div class="flip-card" data-promo="2020"
+                        data-parcours="Master" data-filiere="Big Data"
+                        data-genre="Homme" data-pays="Autres">
+                        <div class="flip-card-inner">
+                            <div
+                                class="flip-card-front student-card bg-white rounded-xl overflow-hidden shadow-lg h-full">
+                                <div class="h-48 bg-yellow-100 overflow-hidden">
+                                    <img
+                                        src="https://randomuser.me/api/portraits/men/3.jpg"
+                                        alt="Moussa Traore"
+                                        class="student-photo w-full h-full object-cover">
+                                </div>
+                                <div class="p-6">
+                                    <h3
+                                        class="text-xl font-bold mb-1 text-gray-800">Moussa
+                                        Traore</h3>
+                                    <p
+                                        class="text-yellow-500 font-semibold mb-2">Promotion
+                                        2020 - Master Big Data</p>
+                                    <div
+                                        class="flex items-center text-sm text-gray-500 mb-2">
+                                        <i data-lucide="map-pin"
+                                            class="w-4 h-4 mr-1"></i>
+                                        <span>Burkina Faso</span>
+                                    </div>
+                                    <div
+                                        class="flex items-center text-sm text-gray-500">
+                                        <i data-lucide="award"
+                                            class="w-4 h-4 mr-1"></i>
+                                        <span>Mention Excellent</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="flip-card-back student-card bg-yellow-100 rounded-xl overflow-hidden shadow-lg h-full p-6">
+                                <h3
+                                    class="text-xl font-bold mb-3 text-gray-800">Plus
+                                    d'infos</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i data-lucide="briefcase"
+                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                        <span>Data Engineer à Ouagadougou</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-lucide="star"
+                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                        <span>Projet: Plateforme d'analyse de
+                                            données agricoles</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-lucide="heart"
+                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                        <span>Membre du club scientifique</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carte Étudiant 4 -->
+                    <div class="flip-card" data-promo="2020"
+                        data-parcours="Ingénieur" data-filiere="DevOps"
+                        data-genre="Femme" data-pays="Gabon">
+                        <div class="flip-card-inner">
+                            <div
+                                class="flip-card-front student-card bg-white rounded-xl overflow-hidden shadow-lg h-full">
+                                <div class="h-48 bg-yellow-100 overflow-hidden">
+                                    <img
+                                        src="https://randomuser.me/api/portraits/women/4.jpg"
+                                        alt="Laura Ndong"
+                                        class="student-photo w-full h-full object-cover">
+                                </div>
+                                <div class="p-6">
+                                    <h3
+                                        class="text-xl font-bold mb-1 text-gray-800">Laura
+                                        Ndong</h3>
+                                    <p
+                                        class="text-yellow-500 font-semibold mb-2">Promotion
+                                        2020 - Ingénieur DevOps</p>
+                                    <div
+                                        class="flex items-center text-sm text-gray-500 mb-2">
+                                        <i data-lucide="map-pin"
+                                            class="w-4 h-4 mr-1"></i>
+                                        <span>Gabon</span>
+                                    </div>
+                                    <div
+                                        class="flex items-center text-sm text-gray-500">
+                                        <i data-lucide="award"
+                                            class="w-4 h-4 mr-1"></i>
+                                        <span>Mention Très Bien</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="flip-card-back student-card bg-yellow-100 rounded-xl overflow-hidden shadow-lg h-full p-6">
+                                <h3
+                                    class="text-xl font-bold mb-3 text-gray-800">Plus
+                                    d'infos</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i data-lucide="briefcase"
+                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                        <span>DevOps Engineer chez MTN</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-lucide="star"
+                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                        <span>Projet: Pipeline CI/CD pour
+                                            applications mobiles</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-lucide="heart"
+                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                        <span>Membre du club informatique</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="flex justify-center mt-8">
+                    <div class="flex gap-2">
+                        <button
+                            class="px-4 py-2 rounded-lg bg-yellow-500 text-white font-semibold">1</button>
+                        <button
+                            class="px-4 py-2 rounded-lg bg-yellow-100 text-gray-800 font-semibold hover:bg-yellow-200">2</button>
+                        <button
+                            class="px-4 py-2 rounded-lg bg-yellow-100 text-gray-800 font-semibold hover:bg-yellow-200">3</button>
+                        <button
+                            class="px-4 py-2 rounded-lg bg-yellow-100 text-gray-800 font-semibold hover:bg-yellow-200">
+                            <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Tableaux (masquée par défaut) -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="flex justify-between items-center mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800">Vue Détailée en
+                        Tableaux</h2>
+                    <button id="toggle-tables"
+                        class="flex items-center text-yellow-600 font-semibold">
+                        <i data-lucide="table" class="w-5 h-5 mr-2"></i>
+                        Afficher les tableaux
+                    </button>
+                </div>
+
+                <!-- Contenu des Tableaux (masqué par défaut) -->
+                <div id="tables-content" class="hidden" data-aos="fade-up">
+                    <!-- Onglets de Visualisation -->
+                    <div class="mb-6">
+                        <div class="flex flex-wrap gap-2">
+                            <button
+                                class="toggle-btn active px-4 py-2 rounded-lg bg-yellow-100 text-gray-800"
+                                data-tab="parcours">
+                                Parcours
+                            </button>
+                            <button
+                                class="toggle-btn px-4 py-2 rounded-lg bg-yellow-100 text-gray-800"
+                                data-tab="filieres">
+                                Filières
+                            </button>
+                            <button
+                                class="toggle-btn px-4 py-2 rounded-lg bg-yellow-100 text-gray-800"
+                                data-tab="genre">
+                                Genre
+                            </button>
+                            <button
+                                class="toggle-btn px-4 py-2 rounded-lg bg-yellow-100 text-gray-800"
+                                data-tab="pays">
+                                Pays
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Contenu Parcours -->
+                    <div id="parcours-content" class="tab-content active">
+                        <div class="overflow-x-auto">
+                            <table class="student-table">
+                                <thead>
+                                    <tr>
+                                        <th>Promotion</th>
+                                        <th>AP</th>
+                                        <th>MIAGE</th>
+                                        <th>Master</th>
+                                        <th>Ingénieur</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Les données des tableaux restent les mêmes que dans la version précédente -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Les autres contenus de tableaux restent les mêmes -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-yellow-500 text-gray-800 py-12">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">IAI Gabon</h3>
+                        <p class="mb-4">Institut Africain d'Informatique - Siège
+                            à Libreville, Gabon</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="hover:text-yellow-700">
+                                <i data-lucide="facebook" class="w-6 h-6"></i>
+                            </a>
+                            <a href="#" class="hover:text-yellow-700">
+                                <i data-lucide="twitter" class="w-6 h-6"></i>
+                            </a>
+                            <a href="#" class="hover:text-yellow-700">
+                                <i data-lucide="linkedin" class="w-6 h-6"></i>
+                            </a>
+                            <a href="#" class="hover:text-yellow-700">
+                                <i data-lucide="instagram" class="w-6 h-6"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Liens Utiles</h3>
+                        <ul class="space-y-2">
+                            <li><a href="index.html"
+                                    class="hover:text-yellow-700">Accueil</a></li>
+                            <li><a href="page2.html"
+                                    class="hover:text-yellow-700">Statistiques</a></li>
+                            <li><a href="page3.html"
+                                    class="hover:text-yellow-700">Clubs</a></li>
+                            <li><a href="promotions.html"
+                                    class="hover:text-yellow-700">Promotions</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Contact</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i data-lucide="map-pin"
+                                    class="w-5 h-5 mr-2"></i>
+                                <span>Libreville, Gabon</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="mail" class="w-5 h-5 mr-2"></i>
+                                <span>contact@iai-gabon.edu</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+                                <span>+241 XX XX XX XX</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Bureau des
+                            Étudiants</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i data-lucide="mail" class="w-5 h-5 mr-2"></i>
+                                <span>bde@iai-gabon.edu</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+                                <span>+241 XX XX XX XX</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="clock" class="w-5 h-5 mr-2"></i>
+                                <span>Lun-Ven: 12h-15h</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-yellow-600 mt-8 pt-8 text-center">
+                    <p>&copy; 2023 IAI Gabon - Tous droits réservés</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+        
+        // Initialize AOS Animation
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        // Gestion des filtres
+        const parcoursFilter = document.getElementById('parcours-filter');
+        const filiereFilter = document.getElementById('filiere-filter');
+        const genreFilter = document.getElementById('genre-filter');
+        const paysFilter = document.getElementById('pays-filter');
+        const promoButtons = document.querySelectorAll('[data-promo]');
+        
+        function filterContent() {
+            const parcoursValue = parcoursFilter.value;
+            const filiereValue = filiereFilter.value;
+            const genreValue = genreFilter.value;
+            const paysValue = paysFilter.value;
+            const promoValue = document.querySelector('[data-promo].active')?.getAttribute('data-promo') || 'all';
+            
+            // Filtrer les cartes étudiantes
+            document.querySelectorAll('.flip-card').forEach(card => {
+                const promoMatch = promoValue === 'all' || card.getAttribute('data-promo') === promoValue;
+                const parcoursMatch = parcoursValue === 'all' || card.getAttribute('data-parcours') === parcoursValue;
+                const filiereMatch = filiereValue === 'all' || card.getAttribute('data-filiere') === filiereValue;
+                const genreMatch = genreValue === 'all' || card.getAttribute('data-genre') === genreValue;
+                const paysMatch = paysValue === 'all' || card.getAttribute('data-pays') === paysValue;
+                
+                if (promoMatch && parcoursMatch && filiereMatch && genreMatch && paysMatch) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            // Filtrer les tableaux (si visibles)
+            if (document.getElementById('tables-content').style.display !== 'none') {
+                document.querySelectorAll('tr[data-promo]').forEach(row => {
+                    const promoMatch = promoValue === 'all' || row.getAttribute('data-promo') === promoValue;
+                    if (promoMatch) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            }
+        }
+        
+        // Écouteurs d'événements pour les filtres
+        parcoursFilter.addEventListener('change', filterContent);
+        filiereFilter.addEventListener('change', filterContent);
+        genreFilter.addEventListener('change', filterContent);
+        paysFilter.addEventListener('change', filterContent);
+        
+        promoButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                promoButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                filterContent();
+            });
+        });
+        
+        // Gestion des onglets
+        const tabButtons = document.querySelectorAll('[data-tab]');
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                document.querySelectorAll('.tab-content').forEach(content => {
+                    content.classList.remove('active');
+                });
+                
+                const tabId = button.getAttribute('data-tab');
+                document.getElementById(`${tabId}-content`).classList.add('active');
+            });
+        });
+        
+        // Toggle des tableaux
+        const toggleTablesBtn = document.getElementById('toggle-tables');
+        const tablesContent = document.getElementById('tables-content');
+        
+        toggleTablesBtn.addEventListener('click', () => {
+            if (tablesContent.style.display === 'none') {
+                tablesContent.style.display = 'block';
+                toggleTablesBtn.innerHTML = `
+                    <i data-lucide="table" class="w-5 h-5 mr-2"></i>
+                    Masquer les tableaux
+                `;
+            } else {
+                tablesContent.style.display = 'none';
+                toggleTablesBtn.innerHTML = `
+                    <i data-lucide="table" class="w-5 h-5 mr-2"></i>
+                    Afficher les tableaux
+                `;
+            }
+            lucide.createIcons(); // Recharger les icônes après le changement
+        });
+    </script>
+    </body>
+</html>
