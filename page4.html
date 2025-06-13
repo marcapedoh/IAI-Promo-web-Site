@@ -12,8 +12,8 @@
         <!-- Lucide Icons CDN -->
         <script src="https://unpkg.com/lucide@latest"></script>
         <!-- AOS Animation CDN -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
         <link rel="stylesheet" href="assets/css/style3.css">
     </head>
     <body class="bg-white font-sans">
@@ -43,15 +43,13 @@
                         <!-- Logo -->
                         <div
                             class="flex items-center space-x-4 mb-3 md:mb-0 md:absolute md:left-6">
-                            <div
-                                class="flex items-center justify-center">
+                            <div class="flex items-center justify-center">
                                 <img src="assets/Iai-togo.jpg" alt
                                     class="w-12 h-12 bg-white rounded-full">
                             </div>
                             <span
-                                class="text-xl font-bold text-gray-800">IAI(Institut
-                                Africain d'Informatique)
-                            </span>
+                                class="text-xl font-bold text-gray-800">IAI
+                                Promotions</span>
                         </div>
 
                         <!-- Menu centré -->
@@ -75,6 +73,7 @@
                 </div>
             </div>
         </nav>
+
         <!-- Hero Section -->
         <section
             class="relative py-20 bg-gradient-to-r from-yellow-100 to-yellow-50 overflow-hidden">
@@ -85,8 +84,8 @@
                     class="absolute bottom-0 right-0 w-64 h-64 bg-yellow-500 rounded-full filter blur-xl"></div>
             </div>
 
-            <div class="container mx-auto px-6 z-10 text-center"
-                data-aos="fade-up">
+            <div
+                class="animate-fade-up container mx-auto px-6 z-10 text-center">
                 <h1 class="text-4xl md:text-6xl font-bold mb-6 text-gray-800">
                     <span class="text-yellow-500">Promotions</span> 2019-2024
                 </h1>
@@ -100,8 +99,8 @@
         <!-- Contrôles de Filtrage -->
         <section class="py-12 bg-white">
             <div class="container mx-auto px-6">
-                <div class="glassmorphism rounded-xl p-6 shadow-lg mb-8"
-                    data-aos="fade-up">
+                <div
+                    class="animate-fade-up glassmorphism rounded-xl p-6 shadow-lg mb-8">
                     <h2 class="text-2xl font-bold mb-6 text-gray-800">Explorer
                         les Données</h2>
 
@@ -212,254 +211,455 @@
         <!-- Cartes Étudiantes -->
         <section class="py-12 bg-yellow-50">
             <div class="container mx-auto px-6">
-                <h2 class="text-2xl font-bold mb-8 text-gray-800"
-                    data-aos="fade-up">Nos Étudiants</h2>
+                <h2
+                    class="animate-fade-up text-2xl font-bold mb-8 text-gray-800">Nos
+                    Étudiants</h2>
 
                 <div
                     class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
                     id="students-cards">
                     <!-- Carte Étudiant 1 -->
-                    <div class="flip-card" data-promo="2019" data-parcours="AP"
-                        data-filiere="all" data-genre="Homme" data-pays="Gabon">
-                        <div class="flip-card-inner">
+                    <div
+                        class="student-card bg-white rounded-xl overflow-hidden shadow-lg relative"
+                        data-promo="2019" data-parcours="AP" data-filiere="all"
+                        data-genre="Homme" data-pays="Gabon">
+                        <div class="h-64 bg-yellow-100 overflow-hidden">
+                            <img
+                                src="https://randomuser.me/api/portraits/men/1.jpg"
+                                alt="Jean Ndong"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3
+                                class="text-xl font-bold mb-1 text-gray-800">Jean
+                                Ndong</h3>
+                            <p
+                                class="text-yellow-500 font-semibold mb-2">Promotion
+                                2019 - AP</p>
                             <div
-                                class="flip-card-front student-card bg-white rounded-xl overflow-hidden shadow-lg h-full">
-                                <div class="h-48 bg-yellow-100 overflow-hidden">
-                                    <img
-                                        src="https://randomuser.me/api/portraits/men/1.jpg"
-                                        alt="Jean Ndong"
-                                        class="student-photo w-full h-full object-cover">
-                                </div>
-                                <div class="p-6">
-                                    <h3
-                                        class="text-xl font-bold mb-1 text-gray-800">Jean
-                                        Ndong</h3>
-                                    <p
-                                        class="text-yellow-500 font-semibold mb-2">Promotion
-                                        2019 - AP</p>
-                                    <div
-                                        class="flex items-center text-sm text-gray-500 mb-2">
-                                        <i data-lucide="map-pin"
-                                            class="w-4 h-4 mr-1"></i>
-                                        <span>Gabon</span>
-                                    </div>
-                                    <div
-                                        class="flex items-center text-sm text-gray-500">
-                                        <i data-lucide="award"
-                                            class="w-4 h-4 mr-1"></i>
-                                        <span>Mention Très Bien</span>
-                                    </div>
-                                </div>
+                                class="flex items-center text-sm text-gray-500 mb-2">
+                                <i data-lucide="map-pin"
+                                    class="w-4 h-4 mr-1"></i>
+                                <span>Gabon</span>
                             </div>
                             <div
-                                class="flip-card-back student-card bg-yellow-100 rounded-xl overflow-hidden shadow-lg h-full p-6">
-                                <h3
-                                    class="text-xl font-bold mb-3 text-gray-800">Plus
-                                    d'infos</h3>
-                                <ul class="space-y-2 text-gray-700">
-                                    <li class="flex items-start">
-                                        <i data-lucide="briefcase"
-                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
-                                        <span>Développeur chez Orange
-                                            Gabon</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <i data-lucide="star"
-                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
-                                        <span>Projet: Application de gestion
-                                            scolaire</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <i data-lucide="heart"
-                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
-                                        <span>Membre du club informatique</span>
-                                    </li>
-                                </ul>
+                                class="flex items-center text-sm text-gray-500">
+                                <i data-lucide="award" class="w-4 h-4 mr-1"></i>
+                                <span>Mention Très Bien</span>
                             </div>
+                        </div>
+                        <div class="student-info">
+                            <h3
+                                class="text-xl font-bold mb-3 text-gray-800">Plus
+                                d'infos</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <i data-lucide="briefcase"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Développeur chez Orange Gabon</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="star"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Projet: Application de gestion
+                                        scolaire</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="heart"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Membre du club informatique</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
                     <!-- Carte Étudiant 2 -->
-                    <div class="flip-card" data-promo="2019"
-                        data-parcours="MIAGE" data-filiere="all"
-                        data-genre="Femme" data-pays="Cameroun">
-                        <div class="flip-card-inner">
+                    <div
+                        class="student-card bg-white rounded-xl overflow-hidden shadow-lg relative"
+                        data-promo="2019" data-parcours="MIAGE"
+                        data-filiere="all" data-genre="Femme"
+                        data-pays="Cameroun">
+                        <div class="h-64 bg-yellow-100 overflow-hidden">
+                            <img
+                                src="https://randomuser.me/api/portraits/women/2.jpg"
+                                alt="Sarah Mbala"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3
+                                class="text-xl font-bold mb-1 text-gray-800">Sarah
+                                Mbala</h3>
+                            <p
+                                class="text-yellow-500 font-semibold mb-2">Promotion
+                                2019 - MIAGE</p>
                             <div
-                                class="flip-card-front student-card bg-white rounded-xl overflow-hidden shadow-lg h-full">
-                                <div class="h-48 bg-yellow-100 overflow-hidden">
-                                    <img
-                                        src="https://randomuser.me/api/portraits/women/2.jpg"
-                                        alt="Sarah Mbala"
-                                        class="student-photo w-full h-full object-cover">
-                                </div>
-                                <div class="p-6">
-                                    <h3
-                                        class="text-xl font-bold mb-1 text-gray-800">Sarah
-                                        Mbala</h3>
-                                    <p
-                                        class="text-yellow-500 font-semibold mb-2">Promotion
-                                        2019 - MIAGE</p>
-                                    <div
-                                        class="flex items-center text-sm text-gray-500 mb-2">
-                                        <i data-lucide="map-pin"
-                                            class="w-4 h-4 mr-1"></i>
-                                        <span>Cameroun</span>
-                                    </div>
-                                    <div
-                                        class="flex items-center text-sm text-gray-500">
-                                        <i data-lucide="award"
-                                            class="w-4 h-4 mr-1"></i>
-                                        <span>Mention Bien</span>
-                                    </div>
-                                </div>
+                                class="flex items-center text-sm text-gray-500 mb-2">
+                                <i data-lucide="map-pin"
+                                    class="w-4 h-4 mr-1"></i>
+                                <span>Cameroun</span>
                             </div>
                             <div
-                                class="flip-card-back student-card bg-yellow-100 rounded-xl overflow-hidden shadow-lg h-full p-6">
-                                <h3
-                                    class="text-xl font-bold mb-3 text-gray-800">Plus
-                                    d'infos</h3>
-                                <ul class="space-y-2 text-gray-700">
-                                    <li class="flex items-start">
-                                        <i data-lucide="briefcase"
-                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
-                                        <span>Consultante ERP à Douala</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <i data-lucide="star"
-                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
-                                        <span>Projet: Système de gestion
-                                            d'entreprise</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <i data-lucide="heart"
-                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
-                                        <span>Membre du club
-                                            entrepreneuriat</span>
-                                    </li>
-                                </ul>
+                                class="flex items-center text-sm text-gray-500">
+                                <i data-lucide="award" class="w-4 h-4 mr-1"></i>
+                                <span>Mention Bien</span>
                             </div>
+                        </div>
+                        <div class="student-info">
+                            <h3
+                                class="text-xl font-bold mb-3 text-gray-800">Plus
+                                d'infos</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <i data-lucide="briefcase"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Consultante ERP à Douala</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="star"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Projet: Système de gestion
+                                        d'entreprise</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="heart"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Membre du club entrepreneuriat</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
                     <!-- Carte Étudiant 3 -->
-                    <div class="flip-card" data-promo="2020"
-                        data-parcours="Master" data-filiere="Big Data"
-                        data-genre="Homme" data-pays="Autres">
-                        <div class="flip-card-inner">
+                    <div
+                        class="student-card bg-white rounded-xl overflow-hidden shadow-lg relative"
+                        data-promo="2020" data-parcours="Master"
+                        data-filiere="Big Data" data-genre="Homme"
+                        data-pays="Autres">
+                        <div class="h-64 bg-yellow-100 overflow-hidden">
+                            <img
+                                src="https://randomuser.me/api/portraits/men/3.jpg"
+                                alt="Moussa Traore"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3
+                                class="text-xl font-bold mb-1 text-gray-800">Moussa
+                                Traore</h3>
+                            <p
+                                class="text-yellow-500 font-semibold mb-2">Promotion
+                                2020 - Master Big Data</p>
                             <div
-                                class="flip-card-front student-card bg-white rounded-xl overflow-hidden shadow-lg h-full">
-                                <div class="h-48 bg-yellow-100 overflow-hidden">
-                                    <img
-                                        src="https://randomuser.me/api/portraits/men/3.jpg"
-                                        alt="Moussa Traore"
-                                        class="student-photo w-full h-full object-cover">
-                                </div>
-                                <div class="p-6">
-                                    <h3
-                                        class="text-xl font-bold mb-1 text-gray-800">Moussa
-                                        Traore</h3>
-                                    <p
-                                        class="text-yellow-500 font-semibold mb-2">Promotion
-                                        2020 - Master Big Data</p>
-                                    <div
-                                        class="flex items-center text-sm text-gray-500 mb-2">
-                                        <i data-lucide="map-pin"
-                                            class="w-4 h-4 mr-1"></i>
-                                        <span>Burkina Faso</span>
-                                    </div>
-                                    <div
-                                        class="flex items-center text-sm text-gray-500">
-                                        <i data-lucide="award"
-                                            class="w-4 h-4 mr-1"></i>
-                                        <span>Mention Excellent</span>
-                                    </div>
-                                </div>
+                                class="flex items-center text-sm text-gray-500 mb-2">
+                                <i data-lucide="map-pin"
+                                    class="w-4 h-4 mr-1"></i>
+                                <span>Burkina Faso</span>
                             </div>
                             <div
-                                class="flip-card-back student-card bg-yellow-100 rounded-xl overflow-hidden shadow-lg h-full p-6">
-                                <h3
-                                    class="text-xl font-bold mb-3 text-gray-800">Plus
-                                    d'infos</h3>
-                                <ul class="space-y-2 text-gray-700">
-                                    <li class="flex items-start">
-                                        <i data-lucide="briefcase"
-                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
-                                        <span>Data Engineer à Ouagadougou</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <i data-lucide="star"
-                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
-                                        <span>Projet: Plateforme d'analyse de
-                                            données agricoles</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <i data-lucide="heart"
-                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
-                                        <span>Membre du club scientifique</span>
-                                    </li>
-                                </ul>
+                                class="flex items-center text-sm text-gray-500">
+                                <i data-lucide="award" class="w-4 h-4 mr-1"></i>
+                                <span>Mention Excellent</span>
                             </div>
+                        </div>
+                        <div class="student-info">
+                            <h3
+                                class="text-xl font-bold mb-3 text-gray-800">Plus
+                                d'infos</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <i data-lucide="briefcase"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Data Engineer à Ouagadougou</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="star"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Projet: Plateforme d'analyse de
+                                        données agricoles</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="heart"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Membre du club scientifique</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
                     <!-- Carte Étudiant 4 -->
-                    <div class="flip-card" data-promo="2020"
-                        data-parcours="Ingénieur" data-filiere="DevOps"
-                        data-genre="Femme" data-pays="Gabon">
-                        <div class="flip-card-inner">
+                    <div
+                        class="student-card bg-white rounded-xl overflow-hidden shadow-lg relative"
+                        data-promo="2020" data-parcours="Ingénieur"
+                        data-filiere="DevOps" data-genre="Femme"
+                        data-pays="Gabon">
+                        <div class="h-64 bg-yellow-100 overflow-hidden">
+                            <img
+                                src="https://randomuser.me/api/portraits/women/4.jpg"
+                                alt="Laura Ndong"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3
+                                class="text-xl font-bold mb-1 text-gray-800">Laura
+                                Ndong</h3>
+                            <p
+                                class="text-yellow-500 font-semibold mb-2">Promotion
+                                2020 - Ingénieur DevOps</p>
                             <div
-                                class="flip-card-front student-card bg-white rounded-xl overflow-hidden shadow-lg h-full">
-                                <div class="h-48 bg-yellow-100 overflow-hidden">
-                                    <img
-                                        src="https://randomuser.me/api/portraits/women/4.jpg"
-                                        alt="Laura Ndong"
-                                        class="student-photo w-full h-full object-cover">
-                                </div>
-                                <div class="p-6">
-                                    <h3
-                                        class="text-xl font-bold mb-1 text-gray-800">Laura
-                                        Ndong</h3>
-                                    <p
-                                        class="text-yellow-500 font-semibold mb-2">Promotion
-                                        2020 - Ingénieur DevOps</p>
-                                    <div
-                                        class="flex items-center text-sm text-gray-500 mb-2">
-                                        <i data-lucide="map-pin"
-                                            class="w-4 h-4 mr-1"></i>
-                                        <span>Gabon</span>
-                                    </div>
-                                    <div
-                                        class="flex items-center text-sm text-gray-500">
-                                        <i data-lucide="award"
-                                            class="w-4 h-4 mr-1"></i>
-                                        <span>Mention Très Bien</span>
-                                    </div>
-                                </div>
+                                class="flex items-center text-sm text-gray-500 mb-2">
+                                <i data-lucide="map-pin"
+                                    class="w-4 h-4 mr-1"></i>
+                                <span>Gabon</span>
                             </div>
                             <div
-                                class="flip-card-back student-card bg-yellow-100 rounded-xl overflow-hidden shadow-lg h-full p-6">
-                                <h3
-                                    class="text-xl font-bold mb-3 text-gray-800">Plus
-                                    d'infos</h3>
-                                <ul class="space-y-2 text-gray-700">
-                                    <li class="flex items-start">
-                                        <i data-lucide="briefcase"
-                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
-                                        <span>DevOps Engineer chez MTN</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <i data-lucide="star"
-                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
-                                        <span>Projet: Pipeline CI/CD pour
-                                            applications mobiles</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <i data-lucide="heart"
-                                            class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
-                                        <span>Membre du club informatique</span>
-                                    </li>
-                                </ul>
+                                class="flex items-center text-sm text-gray-500">
+                                <i data-lucide="award" class="w-4 h-4 mr-1"></i>
+                                <span>Mention Très Bien</span>
                             </div>
+                        </div>
+                        <div class="student-info">
+                            <h3
+                                class="text-xl font-bold mb-3 text-gray-800">Plus
+                                d'infos</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <i data-lucide="briefcase"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>DevOps Engineer chez MTN</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="star"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Projet: Pipeline CI/CD pour
+                                        applications mobiles</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="heart"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Membre du club informatique</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Carte Étudiant 5 -->
+                    <div
+                        class="student-card bg-white rounded-xl overflow-hidden shadow-lg relative"
+                        data-promo="2021" data-parcours="AP" data-filiere="all"
+                        data-genre="Homme" data-pays="Côte d'Ivoire">
+                        <div class="h-64 bg-yellow-100 overflow-hidden">
+                            <img
+                                src="https://randomuser.me/api/portraits/men/5.jpg"
+                                alt="Koffi Kouame"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3
+                                class="text-xl font-bold mb-1 text-gray-800">Koffi
+                                Kouame</h3>
+                            <p
+                                class="text-yellow-500 font-semibold mb-2">Promotion
+                                2021 - AP</p>
+                            <div
+                                class="flex items-center text-sm text-gray-500 mb-2">
+                                <i data-lucide="map-pin"
+                                    class="w-4 h-4 mr-1"></i>
+                                <span>Côte d'Ivoire</span>
+                            </div>
+                            <div
+                                class="flex items-center text-sm text-gray-500">
+                                <i data-lucide="award" class="w-4 h-4 mr-1"></i>
+                                <span>Mention Bien</span>
+                            </div>
+                        </div>
+                        <div class="student-info">
+                            <h3
+                                class="text-xl font-bold mb-3 text-gray-800">Plus
+                                d'infos</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <i data-lucide="briefcase"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Développeur Web à Abidjan</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="star"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Projet: Plateforme e-commerce</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="heart"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Membre du club développement</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Carte Étudiant 6 -->
+                    <div
+                        class="student-card bg-white rounded-xl overflow-hidden shadow-lg relative"
+                        data-promo="2021" data-parcours="MIAGE"
+                        data-filiere="all" data-genre="Femme"
+                        data-pays="Sénégal">
+                        <div class="h-64 bg-yellow-100 overflow-hidden">
+                            <img
+                                src="https://randomuser.me/api/portraits/women/6.jpg"
+                                alt="Aminata Diop"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3
+                                class="text-xl font-bold mb-1 text-gray-800">Aminata
+                                Diop</h3>
+                            <p
+                                class="text-yellow-500 font-semibold mb-2">Promotion
+                                2021 - MIAGE</p>
+                            <div
+                                class="flex items-center text-sm text-gray-500 mb-2">
+                                <i data-lucide="map-pin"
+                                    class="w-4 h-4 mr-1"></i>
+                                <span>Sénégal</span>
+                            </div>
+                            <div
+                                class="flex items-center text-sm text-gray-500">
+                                <i data-lucide="award" class="w-4 h-4 mr-1"></i>
+                                <span>Mention Très Bien</span>
+                            </div>
+                        </div>
+                        <div class="student-info">
+                            <h3
+                                class="text-xl font-bold mb-3 text-gray-800">Plus
+                                d'infos</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <i data-lucide="briefcase"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Analyste SI à Dakar</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="star"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Projet: Système de gestion
+                                        hospitalière</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="heart"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Membre du club santé numérique</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Carte Étudiant 7 -->
+                    <div
+                        class="student-card bg-white rounded-xl overflow-hidden shadow-lg relative"
+                        data-promo="2022" data-parcours="Master"
+                        data-filiere="IA-DataScience" data-genre="Homme"
+                        data-pays="Gabon">
+                        <div class="h-64 bg-yellow-100 overflow-hidden">
+                            <img
+                                src="https://randomuser.me/api/portraits/men/7.jpg"
+                                alt="Pierre Mba"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3
+                                class="text-xl font-bold mb-1 text-gray-800">Pierre
+                                Mba</h3>
+                            <p
+                                class="text-yellow-500 font-semibold mb-2">Promotion
+                                2022 - Master IA-DataScience</p>
+                            <div
+                                class="flex items-center text-sm text-gray-500 mb-2">
+                                <i data-lucide="map-pin"
+                                    class="w-4 h-4 mr-1"></i>
+                                <span>Gabon</span>
+                            </div>
+                            <div
+                                class="flex items-center text-sm text-gray-500">
+                                <i data-lucide="award" class="w-4 h-4 mr-1"></i>
+                                <span>Mention Excellent</span>
+                            </div>
+                        </div>
+                        <div class="student-info">
+                            <h3
+                                class="text-xl font-bold mb-3 text-gray-800">Plus
+                                d'infos</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <i data-lucide="briefcase"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Data Scientist à Libreville</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="star"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Projet: Modèle de prédiction
+                                        économique</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="heart"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Membre du club IA</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Carte Étudiant 8 -->
+                    <div
+                        class="student-card bg-white rounded-xl overflow-hidden shadow-lg relative"
+                        data-promo="2022" data-parcours="Ingénieur"
+                        data-filiere="CyberSécurité" data-genre="Femme"
+                        data-pays="Cameroun">
+                        <div class="h-64 bg-yellow-100 overflow-hidden">
+                            <img
+                                src="https://randomuser.me/api/portraits/women/8.jpg"
+                                alt="Esther Ngo"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3
+                                class="text-xl font-bold mb-1 text-gray-800">Esther
+                                Ngo</h3>
+                            <p
+                                class="text-yellow-500 font-semibold mb-2">Promotion
+                                2022 - Ingénieur CyberSécurité</p>
+                            <div
+                                class="flex items-center text-sm text-gray-500 mb-2">
+                                <i data-lucide="map-pin"
+                                    class="w-4 h-4 mr-1"></i>
+                                <span>Cameroun</span>
+                            </div>
+                            <div
+                                class="flex items-center text-sm text-gray-500">
+                                <i data-lucide="award" class="w-4 h-4 mr-1"></i>
+                                <span>Mention Très Bien</span>
+                            </div>
+                        </div>
+                        <div class="student-info">
+                            <h3
+                                class="text-xl font-bold mb-3 text-gray-800">Plus
+                                d'infos</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <i data-lucide="briefcase"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Analyste Sécurité à Yaoundé</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="star"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Projet: Outil de détection
+                                        d'intrusion</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="heart"
+                                        class="w-5 h-5 mr-2 mt-0.5 text-yellow-500"></i>
+                                    <span>Membre du club cybersécurité</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -468,13 +668,13 @@
                 <div class="flex justify-center mt-8">
                     <div class="flex gap-2">
                         <button
-                            class="px-4 py-2 rounded-lg bg-yellow-500 text-white font-semibold">1</button>
+                            class="pagination-btn active px-4 py-2 rounded-lg bg-yellow-500 text-white font-semibold">1</button>
                         <button
-                            class="px-4 py-2 rounded-lg bg-yellow-100 text-gray-800 font-semibold hover:bg-yellow-200">2</button>
+                            class="pagination-btn px-4 py-2 rounded-lg bg-yellow-100 text-gray-800 font-semibold hover:bg-yellow-200">2</button>
                         <button
-                            class="px-4 py-2 rounded-lg bg-yellow-100 text-gray-800 font-semibold hover:bg-yellow-200">3</button>
+                            class="pagination-btn px-4 py-2 rounded-lg bg-yellow-100 text-gray-800 font-semibold hover:bg-yellow-200">3</button>
                         <button
-                            class="px-4 py-2 rounded-lg bg-yellow-100 text-gray-800 font-semibold hover:bg-yellow-200">
+                            class="pagination-btn px-4 py-2 rounded-lg bg-yellow-100 text-gray-800 font-semibold hover:bg-yellow-200">
                             <i data-lucide="chevron-right" class="w-5 h-5"></i>
                         </button>
                     </div>
@@ -482,7 +682,7 @@
             </div>
         </section>
 
-        <!-- Section Tableaux (masquée par défaut) -->
+        <!-- Section Tableaux -->
         <section class="py-12 bg-white">
             <div class="container mx-auto px-6">
                 <div class="flex justify-between items-center mb-8">
@@ -495,8 +695,8 @@
                     </button>
                 </div>
 
-                <!-- Contenu des Tableaux (masqué par défaut) -->
-                <div id="tables-content" class="hidden" data-aos="fade-up">
+                <!-- Contenu des Tableaux -->
+                <div id="tables-content" class="hidden animate-fade-up">
                     <!-- Onglets de Visualisation -->
                     <div class="mb-6">
                         <div class="flex flex-wrap gap-2">
@@ -538,13 +738,467 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <!-- Les données des tableaux restent les mêmes que dans la version précédente -->
+                                    <tr data-promo="2019">
+                                        <td>2019</td>
+                                        <td>25</td>
+                                        <td>18</td>
+                                        <td>12</td>
+                                        <td>8</td>
+                                        <td>63</td>
+                                    </tr>
+                                    <tr data-promo="2020">
+                                        <td>2020</td>
+                                        <td>28</td>
+                                        <td>20</td>
+                                        <td>15</td>
+                                        <td>10</td>
+                                        <td>73</td>
+                                    </tr>
+                                    <tr data-promo="2021">
+                                        <td>2021</td>
+                                        <td>32</td>
+                                        <td>22</td>
+                                        <td>18</td>
+                                        <td>12</td>
+                                        <td>84</td>
+                                    </tr>
+                                    <tr data-promo="2022">
+                                        <td>2022</td>
+                                        <td>35</td>
+                                        <td>25</td>
+                                        <td>20</td>
+                                        <td>15</td>
+                                        <td>95</td>
+                                    </tr>
+                                    <tr data-promo="2023">
+                                        <td>2023</td>
+                                        <td>40</td>
+                                        <td>28</td>
+                                        <td>22</td>
+                                        <td>18</td>
+                                        <td>108</td>
+                                    </tr>
+                                    <tr data-promo="2024">
+                                        <td>2024</td>
+                                        <td>42</td>
+                                        <td>30</td>
+                                        <td>25</td>
+                                        <td>20</td>
+                                        <td>117</td>
+                                    </tr>
+                                    <tr class="font-bold">
+                                        <td>Total</td>
+                                        <td>202</td>
+                                        <td>143</td>
+                                        <td>112</td>
+                                        <td>83</td>
+                                        <td>540</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
 
-                    <!-- Les autres contenus de tableaux restent les mêmes -->
+                    <!-- Contenu Filières -->
+                    <div id="filieres-content" class="tab-content">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="overflow-x-auto">
+                                <table class="student-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Promotion</th>
+                                            <th>IA-DataScience</th>
+                                            <th>Big Data</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr data-promo="2019">
+                                            <td>2019</td>
+                                            <td>8</td>
+                                            <td>4</td>
+                                            <td>12</td>
+                                        </tr>
+                                        <tr data-promo="2020">
+                                            <td>2020</td>
+                                            <td>10</td>
+                                            <td>5</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr data-promo="2021">
+                                            <td>2021</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr data-promo="2022">
+                                            <td>2022</td>
+                                            <td>14</td>
+                                            <td>6</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr data-promo="2023">
+                                            <td>2023</td>
+                                            <td>15</td>
+                                            <td>7</td>
+                                            <td>22</td>
+                                        </tr>
+                                        <tr data-promo="2024">
+                                            <td>2024</td>
+                                            <td>18</td>
+                                            <td>7</td>
+                                            <td>25</td>
+                                        </tr>
+                                        <tr class="font-bold">
+                                            <td>Total</td>
+                                            <td>77</td>
+                                            <td>35</td>
+                                            <td>112</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="overflow-x-auto">
+                                <table class="student-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Promotion</th>
+                                            <th>CyberSécurité</th>
+                                            <th>DevOps</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr data-promo="2019">
+                                            <td>2019</td>
+                                            <td>5</td>
+                                            <td>3</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr data-promo="2020">
+                                            <td>2020</td>
+                                            <td>6</td>
+                                            <td>4</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr data-promo="2021">
+                                            <td>2021</td>
+                                            <td>7</td>
+                                            <td>5</td>
+                                            <td>12</td>
+                                        </tr>
+                                        <tr data-promo="2022">
+                                            <td>2022</td>
+                                            <td>8</td>
+                                            <td>7</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr data-promo="2023">
+                                            <td>2023</td>
+                                            <td>10</td>
+                                            <td>8</td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr data-promo="2024">
+                                            <td>2024</td>
+                                            <td>12</td>
+                                            <td>8</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr class="font-bold">
+                                            <td>Total</td>
+                                            <td>48</td>
+                                            <td>35</td>
+                                            <td>83</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contenu Genre -->
+                    <div id="genre-content" class="tab-content">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="overflow-x-auto">
+                                <table class="student-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Promotion</th>
+                                            <th>Hommes</th>
+                                            <th>Femmes</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr data-promo="2019">
+                                            <td>2019</td>
+                                            <td>45</td>
+                                            <td>18</td>
+                                            <td>63</td>
+                                        </tr>
+                                        <tr data-promo="2020">
+                                            <td>2020</td>
+                                            <td>52</td>
+                                            <td>21</td>
+                                            <td>73</td>
+                                        </tr>
+                                        <tr data-promo="2021">
+                                            <td>2021</td>
+                                            <td>59</td>
+                                            <td>25</td>
+                                            <td>84</td>
+                                        </tr>
+                                        <tr data-promo="2022">
+                                            <td>2022</td>
+                                            <td>66</td>
+                                            <td>29</td>
+                                            <td>95</td>
+                                        </tr>
+                                        <tr data-promo="2023">
+                                            <td>2023</td>
+                                            <td>75</td>
+                                            <td>33</td>
+                                            <td>108</td>
+                                        </tr>
+                                        <tr data-promo="2024">
+                                            <td>2024</td>
+                                            <td>82</td>
+                                            <td>35</td>
+                                            <td>117</td>
+                                        </tr>
+                                        <tr class="font-bold">
+                                            <td>Total</td>
+                                            <td>379</td>
+                                            <td>161</td>
+                                            <td>540</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="bg-yellow-50 p-6 rounded-xl">
+                                <h3
+                                    class="text-xl font-bold mb-4 text-gray-800">Répartition
+                                    par Genre</h3>
+                                <div
+                                    class="h-64 flex items-center justify-center">
+                                    <div class="w-64 h-64 relative">
+                                        <div
+                                            class="absolute inset-0 rounded-full border-8 border-yellow-200"></div>
+                                        <div
+                                            class="absolute inset-0 rounded-full border-8 border-yellow-500"
+                                            style="clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);"></div>
+                                        <div
+                                            class="absolute inset-0 flex flex-col items-center justify-center">
+                                            <span
+                                                class="text-4xl font-bold text-gray-800">70%</span>
+                                            <span
+                                                class="text-gray-600">Hommes</span>
+                                        </div>
+                                        <div
+                                            class="absolute inset-0 flex flex-col items-center justify-end pb-8">
+                                            <span
+                                                class="text-4xl font-bold text-gray-800">30%</span>
+                                            <span
+                                                class="text-gray-600">Femmes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contenu Pays -->
+                    <div id="pays-content" class="tab-content">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="overflow-x-auto">
+                                <table class="student-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Promotion</th>
+                                            <th>Gabon</th>
+                                            <th>Cameroun</th>
+                                            <th>Côte d'Ivoire</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr data-promo="2019">
+                                            <td>2019</td>
+                                            <td>35</td>
+                                            <td>15</td>
+                                            <td>8</td>
+                                            <td>58</td>
+                                        </tr>
+                                        <tr data-promo="2020">
+                                            <td>2020</td>
+                                            <td>40</td>
+                                            <td>18</td>
+                                            <td>10</td>
+                                            <td>68</td>
+                                        </tr>
+                                        <tr data-promo="2021">
+                                            <td>2021</td>
+                                            <td>45</td>
+                                            <td>20</td>
+                                            <td>12</td>
+                                            <td>77</td>
+                                        </tr>
+                                        <tr data-promo="2022">
+                                            <td>2022</td>
+                                            <td>50</td>
+                                            <td>25</td>
+                                            <td>13</td>
+                                            <td>88</td>
+                                        </tr>
+                                        <tr data-promo="2023">
+                                            <td>2023</td>
+                                            <td>55</td>
+                                            <td>30</td>
+                                            <td>15</td>
+                                            <td>100</td>
+                                        </tr>
+                                        <tr data-promo="2024">
+                                            <td>2024</td>
+                                            <td>60</td>
+                                            <td>35</td>
+                                            <td>16</td>
+                                            <td>111</td>
+                                        </tr>
+                                        <tr class="font-bold">
+                                            <td>Total</td>
+                                            <td>285</td>
+                                            <td>143</td>
+                                            <td>74</td>
+                                            <td>502</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="overflow-x-auto">
+                                <table class="student-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Promotion</th>
+                                            <th>Sénégal</th>
+                                            <th>Autres</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr data-promo="2019">
+                                            <td>2019</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr data-promo="2020">
+                                            <td>2020</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr data-promo="2021">
+                                            <td>2021</td>
+                                            <td>4</td>
+                                            <td>3</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr data-promo="2022">
+                                            <td>2022</td>
+                                            <td>4</td>
+                                            <td>3</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr data-promo="2023">
+                                            <td>2023</td>
+                                            <td>5</td>
+                                            <td>3</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr data-promo="2024">
+                                            <td>2024</td>
+                                            <td>5</td>
+                                            <td>4</td>
+                                            <td>9</td>
+                                        </tr>
+                                        <tr class="font-bold">
+                                            <td>Total</td>
+                                            <td>24</td>
+                                            <td>17</td>
+                                            <td>41</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Témoignages -->
+        <section class="py-12 bg-yellow-50">
+            <div class="container mx-auto px-6">
+                <h2
+                    class="animate-fade-up text-2xl font-bold mb-8 text-center text-gray-800">Témoignages
+                    d'Anciens</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div
+                        class="animate-fade-up delay-100ms bg-white p-6 rounded-xl shadow-md">
+                        <div class="flex items-center mb-4">
+                            <img
+                                src="https://randomuser.me/api/portraits/men/11.jpg"
+                                alt="Jean Ndong"
+                                class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold text-gray-800">Jean
+                                    Ndong</h4>
+                                <p class="text-sm text-yellow-500">Promotion
+                                    2019 - AP</p>
+                            </div>
+                        </div>
+                        <p
+                            class="text-gray-600 italic">"L'IAI Gabon m'a offert une formation solide qui m'a permis d'intégrer rapidement le monde professionnel. Les compétences acquises sont directement applicables sur le terrain."</p>
+                    </div>
+
+                    <div
+                        class="animate-fade-up delay-200 bg-white p-6 rounded-xl shadow-md">
+                        <div class="flex items-center mb-4">
+                            <img
+                                src="https://randomuser.me/api/portraits/women/12.jpg"
+                                alt="Sarah Mbala"
+                                class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold text-gray-800">Sarah
+                                    Mbala</h4>
+                                <p class="text-sm text-yellow-500">Promotion
+                                    2019 - MIAGE</p>
+                            </div>
+                        </div>
+                        <p
+                            class="text-gray-600 italic">"La diversité des parcours et la qualité des enseignants font de l'IAI Gabon un institut d'excellence. J'ai pu développer à la fois des compétences techniques et managériales."</p>
+                    </div>
+
+                    <div
+                        class="animate-fade-up delay-300 bg-white p-6 rounded-xl shadow-md">
+                        <div class="flex items-center mb-4">
+                            <img
+                                src="https://randomuser.me/api/portraits/men/13.jpg"
+                                alt="Moussa Traore"
+                                class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold text-gray-800">Moussa
+                                    Traore</h4>
+                                <p class="text-sm text-yellow-500">Promotion
+                                    2020 - Master Big Data</p>
+                            </div>
+                        </div>
+                        <p
+                            class="text-gray-600 italic">"Le master Big Data de l'IAI Gabon est reconnu dans toute la sous-région. J'ai été recruté avant même la fin de ma formation grâce aux projets concrets réalisés."</p>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -554,7 +1208,7 @@
             <div class="container mx-auto px-6">
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div>
-                        <h3 class="text-xl font-bold mb-4">IAI Gabon</h3>
+                        <h3 class="text-xl font-bold mb-4">IAI Promotions</h3>
                         <p class="mb-4">Institut Africain d'Informatique - Siège
                             à Libreville, Gabon</p>
                         <div class="flex space-x-4">
@@ -626,115 +1280,12 @@
                     </div>
                 </div>
 
-                <div class="border-t border-yellow-600 mt-8 pt-8 text-center">
+                <!-- <div class="border-t border-yellow-600 mt-8 pt-8 text-center">
                     <p>&copy; 2023 IAI Gabon - Tous droits réservés</p>
-                </div>
+                </div> -->
             </div>
         </footer>
 
-        <script>
-        // Initialize Lucide Icons
-        lucide.createIcons();
-        
-        // Initialize AOS Animation
-        AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: true
-        });
-        
-        // Gestion des filtres
-        const parcoursFilter = document.getElementById('parcours-filter');
-        const filiereFilter = document.getElementById('filiere-filter');
-        const genreFilter = document.getElementById('genre-filter');
-        const paysFilter = document.getElementById('pays-filter');
-        const promoButtons = document.querySelectorAll('[data-promo]');
-        
-        function filterContent() {
-            const parcoursValue = parcoursFilter.value;
-            const filiereValue = filiereFilter.value;
-            const genreValue = genreFilter.value;
-            const paysValue = paysFilter.value;
-            const promoValue = document.querySelector('[data-promo].active')?.getAttribute('data-promo') || 'all';
-            
-            // Filtrer les cartes étudiantes
-            document.querySelectorAll('.flip-card').forEach(card => {
-                const promoMatch = promoValue === 'all' || card.getAttribute('data-promo') === promoValue;
-                const parcoursMatch = parcoursValue === 'all' || card.getAttribute('data-parcours') === parcoursValue;
-                const filiereMatch = filiereValue === 'all' || card.getAttribute('data-filiere') === filiereValue;
-                const genreMatch = genreValue === 'all' || card.getAttribute('data-genre') === genreValue;
-                const paysMatch = paysValue === 'all' || card.getAttribute('data-pays') === paysValue;
-                
-                if (promoMatch && parcoursMatch && filiereMatch && genreMatch && paysMatch) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-            
-            // Filtrer les tableaux (si visibles)
-            if (document.getElementById('tables-content').style.display !== 'none') {
-                document.querySelectorAll('tr[data-promo]').forEach(row => {
-                    const promoMatch = promoValue === 'all' || row.getAttribute('data-promo') === promoValue;
-                    if (promoMatch) {
-                        row.style.display = '';
-                    } else {
-                        row.style.display = 'none';
-                    }
-                });
-            }
-        }
-        
-        // Écouteurs d'événements pour les filtres
-        parcoursFilter.addEventListener('change', filterContent);
-        filiereFilter.addEventListener('change', filterContent);
-        genreFilter.addEventListener('change', filterContent);
-        paysFilter.addEventListener('change', filterContent);
-        
-        promoButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                promoButtons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-                filterContent();
-            });
-        });
-        
-        // Gestion des onglets
-        const tabButtons = document.querySelectorAll('[data-tab]');
-        tabButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                tabButtons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-                
-                document.querySelectorAll('.tab-content').forEach(content => {
-                    content.classList.remove('active');
-                });
-                
-                const tabId = button.getAttribute('data-tab');
-                document.getElementById(`${tabId}-content`).classList.add('active');
-            });
-        });
-        
-        // Toggle des tableaux
-        const toggleTablesBtn = document.getElementById('toggle-tables');
-        const tablesContent = document.getElementById('tables-content');
-        
-        toggleTablesBtn.addEventListener('click', () => {
-            if (tablesContent.style.display === 'none') {
-                tablesContent.style.display = 'block';
-                toggleTablesBtn.innerHTML = `
-                    <i data-lucide="table" class="w-5 h-5 mr-2"></i>
-                    Masquer les tableaux
-                `;
-            } else {
-                tablesContent.style.display = 'none';
-                toggleTablesBtn.innerHTML = `
-                    <i data-lucide="table" class="w-5 h-5 mr-2"></i>
-                    Afficher les tableaux
-                `;
-            }
-            lucide.createIcons(); // Recharger les icônes après le changement
-        });
-    </script>
+        <script src="assets/js/script3.js"></script>
     </body>
 </html>

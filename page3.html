@@ -12,81 +12,11 @@
         <!-- Lucide Icons CDN -->
         <script src="https://unpkg.com/lucide@latest"></script>
         <!-- AOS Animation CDN -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
         <!-- Chart.js for statistics -->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <style>
-        .glassmorphism {
-            background: rgba(255, 255, 255, 0.25);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-        }
-        .club-card {
-            transition: all 0.3s ease;
-        }
-        .club-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-        .event-card {
-            transition: all 0.3s ease;
-        }
-        .event-card:hover {
-            transform: scale(1.02);
-        }
-        .image-upload {
-            border: 2px dashed #fbbf24;
-            background-color: #fef3c7;
-            transition: all 0.3s ease;
-        }
-        .image-upload:hover {
-            background-color: #fde68a;
-            border-color: #f59e0b;
-        }
-         .glassmorphism-nav {
-        background: rgba(255, 253, 224, 0.82);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    }
-    
-    .nav-link {
-        @apply text-gray-800 font-medium hover:text-yellow-600 transition-all px-3 py-1 rounded-lg;
-        position: relative;
-    }
-    
-    .nav-link:hover {
-        @apply bg-yellow-100/40;
-    }
-    
-    .nav-link::after {
-        content: '';
-        @apply absolute bottom-0 left-1/2 w-0 h-0.5 bg-yellow-500 transition-all duration-300;
-        transform: translateX(-50%);
-    }
-    
-    .nav-link:hover::after {
-        @apply w-3/4;
-    }
-    
-    @keyframes pulse {
-        0%, 100% {
-            opacity: 0.6;
-            transform: scale(0.98);
-        }
-        50% {
-            opacity: 0.9;
-            transform: scale(1.02);
-        }
-    }
-    
-    .animate-pulse {
-        animation: pulse 3s ease-in-out infinite;
-    }
-    </style>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+        <link rel="stylesheet" href="assets/css/statsCss.css">
     </head>
     <body class="bg-white font-sans">
         <!-- Navigation -->
@@ -116,7 +46,7 @@
                         </div>
                         <span
                             class="text-xl font-bold text-gray-800 hidden sm:inline-block">IAI
-                            (Institut Africain d'Informatique)</span>
+                            Promotions</span>
                         <span
                             class="text-xl font-bold text-gray-800 sm:hidden">IAI</span>
                     </div>
@@ -149,8 +79,8 @@
                     class="absolute bottom-0 right-0 w-64 h-64 bg-yellow-500 rounded-full filter blur-xl"></div>
             </div>
 
-            <div class="container mx-auto px-6 z-10 text-center"
-                data-aos="fade-up">
+            <div
+                class="animate-fade-up container mx-auto px-6 z-10 text-center">
                 <h1 class="text-4xl md:text-6xl font-bold mb-6 text-gray-800">
                     Vie <span class="text-yellow-500">Étudiante</span> à l'IAI
                 </h1>
@@ -165,8 +95,7 @@
         <section id="clubs" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <h2
-                    class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800"
-                    data-aos="fade-up">
+                    class="animate-fade-up text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
                     Nos <span class="text-yellow-500">Clubs</span> Étudiants
                 </h2>
 
@@ -174,8 +103,7 @@
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                     <!-- Club Football -->
                     <div
-                        class="club-card bg-white rounded-xl overflow-hidden shadow-lg"
-                        data-aos="fade-up" data-aos-delay="100">
+                        class="animate-fade-up delay-100ms club-card bg-white rounded-xl overflow-hidden shadow-lg">
                         <div
                             class="h-48 bg-yellow-100 flex items-center justify-center">
                             <i data-lucide="volleyball"
@@ -201,8 +129,7 @@
 
                     <!-- Club Basket -->
                     <div
-                        class="club-card bg-white rounded-xl overflow-hidden shadow-lg"
-                        data-aos="fade-up" data-aos-delay="200">
+                        class="animate-fade-up delay-200ms club-card bg-white rounded-xl overflow-hidden shadow-lg">
                         <div
                             class="h-48 bg-yellow-100 flex items-center justify-center">
                             <i data-lucide="volleyball"
@@ -229,8 +156,7 @@
 
                     <!-- Club Informatique -->
                     <div
-                        class="club-card bg-white rounded-xl overflow-hidden shadow-lg"
-                        data-aos="fade-up" data-aos-delay="300">
+                        class="animate-fade-up delay-300ms club-card bg-white rounded-xl overflow-hidden shadow-lg">
                         <div
                             class="h-48 bg-yellow-100 flex items-center justify-center">
                             <i data-lucide="code-2"
@@ -256,8 +182,7 @@
 
                     <!-- Club Entrepreneuriat -->
                     <div
-                        class="club-card bg-white rounded-xl overflow-hidden shadow-lg"
-                        data-aos="fade-up" data-aos-delay="400">
+                        class="animate-fade-up delay-400 club-card bg-white rounded-xl overflow-hidden shadow-lg">
                         <div
                             class="h-48 bg-yellow-100 flex items-center justify-center">
                             <i data-lucide="lightbulb"
@@ -283,8 +208,7 @@
 
                     <!-- Club Culturel -->
                     <div
-                        class="club-card bg-white rounded-xl overflow-hidden shadow-lg"
-                        data-aos="fade-up" data-aos-delay="500">
+                        class="animate-fade-up delay-500ms club-card bg-white rounded-xl overflow-hidden shadow-lg">
                         <div
                             class="h-48 bg-yellow-100 flex items-center justify-center">
                             <i data-lucide="music"
@@ -310,8 +234,7 @@
 
                     <!-- Club Scientifique -->
                     <div
-                        class="club-card bg-white rounded-xl overflow-hidden shadow-lg"
-                        data-aos="fade-up" data-aos-delay="600">
+                        class="animate-fade-up delay-600 club-card bg-white rounded-xl overflow-hidden shadow-lg">
                         <div
                             class="h-48 bg-yellow-100 flex items-center justify-center">
                             <i data-lucide="flask-conical"
@@ -337,8 +260,8 @@
                 </div>
 
                 <!-- Zone d'ajout d'images pour les clubs -->
-                <div class="glassmorphism rounded-xl p-8 shadow-lg mb-16"
-                    data-aos="fade-up">
+                <div
+                    class="animate-fade-up glassmorphism rounded-xl p-8 shadow-lg mb-16">
                     <h3
                         class="text-2xl font-bold mb-6 text-gray-800 text-center">Galerie
                         des Clubs</h3>
@@ -379,8 +302,7 @@
         <section id="evenements" class="py-20 bg-yellow-50">
             <div class="container mx-auto px-6">
                 <h2
-                    class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800"
-                    data-aos="fade-up">
+                    class="animate-fade-up text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
                     Événements <span
                         class="text-yellow-500">Extrascolaires</span>
                 </h2>
@@ -389,8 +311,7 @@
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                     <!-- Semaine de l'Étudiant -->
                     <div
-                        class="event-card bg-white rounded-xl overflow-hidden shadow-lg"
-                        data-aos="fade-up" data-aos-delay="100">
+                        class="animate-fade-up delay-100 event-card bg-white rounded-xl overflow-hidden shadow-lg">
                         <div
                             class="h-48 bg-yellow-100 flex items-center justify-center">
                             <i data-lucide="party-popper"
@@ -421,8 +342,7 @@
 
                     <!-- Soirée Chic -->
                     <div
-                        class="event-card bg-white rounded-xl overflow-hidden shadow-lg"
-                        data-aos="fade-up" data-aos-delay="200">
+                        class="animate-fade-up delay-200ms event-card bg-white rounded-xl overflow-hidden shadow-lg">
                         <div
                             class="h-48 bg-yellow-100 flex items-center justify-center">
                             <i data-lucide="sparkles"
@@ -453,8 +373,7 @@
 
                     <!-- Hackathon -->
                     <div
-                        class="event-card bg-white rounded-xl overflow-hidden shadow-lg"
-                        data-aos="fade-up" data-aos-delay="300">
+                        class="animate-fade-up delay-300ms event-card bg-white rounded-xl overflow-hidden shadow-lg">
                         <div
                             class="h-48 bg-yellow-100 flex items-center justify-center">
                             <i data-lucide="code"
@@ -485,8 +404,7 @@
 
                     <!-- Tournoi Sportif -->
                     <div
-                        class="event-card bg-white rounded-xl overflow-hidden shadow-lg"
-                        data-aos="fade-up" data-aos-delay="400">
+                        class="animate-fade-up delay-400ms event-card bg-white rounded-xl overflow-hidden shadow-lg">
                         <div
                             class="h-48 bg-yellow-100 flex items-center justify-center">
                             <i data-lucide="trophy"
@@ -517,8 +435,7 @@
 
                     <!-- Conférence Annuelle -->
                     <div
-                        class="event-card bg-white rounded-xl overflow-hidden shadow-lg"
-                        data-aos="fade-up" data-aos-delay="500">
+                        class="animate-fade-up delay-500ms event-card bg-white rounded-xl overflow-hidden shadow-lg">
                         <div
                             class="h-48 bg-yellow-100 flex items-center justify-center">
                             <i data-lucide="mic"
@@ -549,8 +466,7 @@
 
                     <!-- Gala de Fin d'Année -->
                     <div
-                        class="event-card bg-white rounded-xl overflow-hidden shadow-lg"
-                        data-aos="fade-up" data-aos-delay="600">
+                        class="animate-fade-up delay-600ms event-card bg-white rounded-xl overflow-hidden shadow-lg">
                         <div
                             class="h-48 bg-yellow-100 flex items-center justify-center">
                             <i data-lucide="glass-water"
@@ -580,8 +496,8 @@
                 </div>
 
                 <!-- Zone d'ajout d'images pour les événements -->
-                <div class="glassmorphism rounded-xl p-8 shadow-lg mb-16"
-                    data-aos="fade-up">
+                <div
+                    class="animate-fade-up glassmorphism rounded-xl p-8 shadow-lg mb-16">
                     <h3
                         class="text-2xl font-bold mb-6 text-gray-800 text-center">Galerie
                         des Événements</h3>
@@ -622,8 +538,7 @@
         <section id="bureau" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <h2
-                    class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800"
-                    data-aos="fade-up">
+                    class="animate-fade-up text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
                     Bureau des <span class="text-yellow-500">Étudiants</span>
                 </h2>
 
@@ -631,8 +546,7 @@
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
                     <!-- Président -->
                     <div
-                        class="bg-white rounded-xl overflow-hidden shadow-lg text-center"
-                        data-aos="fade-up" data-aos-delay="100">
+                        class="animate-fade-up delay-100ms bg-white rounded-xl overflow-hidden shadow-lg text-center">
                         <div
                             class="h-48 bg-yellow-100 flex items-center justify-center">
                             <i data-lucide="user"
@@ -652,8 +566,7 @@
 
                     <!-- Vice-Président -->
                     <div
-                        class="bg-white rounded-xl overflow-hidden shadow-lg text-center"
-                        data-aos="fade-up" data-aos-delay="200">
+                        class="animate-fade-up delay-200ms bg-white rounded-xl overflow-hidden shadow-lg text-center">
                         <div
                             class="h-48 bg-yellow-100 flex items-center justify-center">
                             <i data-lucide="user"
@@ -673,8 +586,7 @@
 
                     <!-- Secrétaire Général -->
                     <div
-                        class="bg-white rounded-xl overflow-hidden shadow-lg text-center"
-                        data-aos="fade-up" data-aos-delay="300">
+                        class="animate-fade-up delay-300ms bg-white rounded-xl overflow-hidden shadow-lg text-center">
                         <div
                             class="h-48 bg-yellow-100 flex items-center justify-center">
                             <i data-lucide="user"
@@ -694,8 +606,7 @@
 
                     <!-- Trésorier -->
                     <div
-                        class="bg-white rounded-xl overflow-hidden shadow-lg text-center"
-                        data-aos="fade-up" data-aos-delay="400">
+                        class="animate-fade-up delay-400ms bg-white rounded-xl overflow-hidden shadow-lg text-center">
                         <div
                             class="h-48 bg-yellow-100 flex items-center justify-center">
                             <i data-lucide="user"
@@ -713,30 +624,9 @@
                     </div>
                 </div>
 
-                <!-- Statistiques Genre/Filière -->
-                <h3 class="text-2xl font-bold text-center mb-8 text-gray-800"
-                    data-aos="fade-up">Répartition par Genre et Filière</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-                    <div class="glassmorphism rounded-xl p-6 shadow-lg"
-                        data-aos="fade-right">
-                        <h4
-                            class="text-xl font-semibold mb-4 text-gray-800 text-center">Répartition
-                            par Genre</h4>
-                        <canvas id="genderChart"></canvas>
-                    </div>
-                    <div class="glassmorphism rounded-xl p-6 shadow-lg"
-                        data-aos="fade-left">
-                        <h4
-                            class="text-xl font-semibold mb-4 text-gray-800 text-center">Répartition
-                            par Filière</h4>
-                        <canvas id="courseChart"></canvas>
-                    </div>
-                </div>
-
                 <!-- Contact Bureau -->
                 <div
-                    class="glassmorphism rounded-xl p-8 shadow-lg max-w-3xl mx-auto"
-                    data-aos="fade-up">
+                    class="animate-fade-up glassmorphism rounded-xl p-8 shadow-lg max-w-3xl mx-auto">
                     <h3
                         class="text-2xl font-bold mb-6 text-gray-800 text-center">Contactez
                         le Bureau des Étudiants</h3>
@@ -784,7 +674,7 @@
             <div class="container mx-auto px-6">
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div>
-                        <h3 class="text-xl font-bold mb-4">IAI Gabon</h3>
+                        <h3 class="text-xl font-bold mb-4">IAI Promtions</h3>
                         <p class="mb-4">Institut Africain d'Informatique - Siège
                             à Libreville, Gabon</p>
                         <div class="flex space-x-4">
@@ -856,9 +746,9 @@
                     </div>
                 </div>
 
-                <div class="border-t border-yellow-600 mt-8 pt-8 text-center">
+                <!-- <div class="border-t border-yellow-600 mt-8 pt-8 text-center">
                     <p>&copy; 2025 IAI - Tous droits réservés</p>
-                </div>
+                </div> -->
             </div>
         </footer>
 

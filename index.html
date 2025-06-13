@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>IAI Gabon - Institut Africain d'Informatique</title>
+        <title>Promotions IAI Gabon - Institut Africain d'Informatique</title>
         <!-- Tailwind CSS CDN -->
         <script src="https://cdn.tailwindcss.com"></script>
         <!-- Framer Motion CDN -->
@@ -12,8 +12,8 @@
         <!-- Lucide Icons CDN -->
         <script src="https://unpkg.com/lucide@latest"></script>
         <!-- AOS Animation CDN -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body class="bg-white font-sans">
@@ -47,7 +47,7 @@
                                     class="w-12 h-12 bg-white rounded-full object-cover" />
                             </div>
                             <span class="text-xl font-bold text-gray-800">IAI
-                                Promo</span>
+                                Promotions</span>
                         </div>
 
                         <!-- Menu centré -->
@@ -55,17 +55,13 @@
                             class="flex flex-wrap justify-center items-center gap-4 md:gap-8">
                             <a href="#"
                                 class="text-gray-800 font-semibold hover:text-yellow-600 transition-colors px-3 py-1 rounded-lg hover:bg-yellow-100/50">Accueil</a>
+                            <a href="#promotions"
+                                class="text-gray-800 font-semibold hover:text-yellow-600 transition-colors px-3 py-1 rounded-lg hover:bg-yellow-100/50">Promotions</a>
                             <a href="#formations"
                                 class="text-gray-800 font-semibold hover:text-yellow-600 transition-colors px-3 py-1 rounded-lg hover:bg-yellow-100/50">Formations</a>
-                            <a href="#pays"
-                                class="text-gray-800 font-semibold hover:text-yellow-600 transition-colors px-3 py-1 rounded-lg hover:bg-yellow-100/50">Pays
-                                membres</a>
-                            <a href="#vie-etudiante"
-                                class="text-gray-800 font-semibold hover:text-yellow-600 transition-colors px-3 py-1 rounded-lg hover:bg-yellow-100/50">Vie
-                                étudiante</a>
-                            <a href="page2.html"
-                                class="bg-yellow-500 px-4 py-2 rounded-lg text-white font-semibold hover:bg-yellow-600 transition shadow-md">Commencer
-                                !</a>
+                            <a href="page4.html"
+                                class="bg-yellow-500 px-4 py-2 rounded-lg text-white font-semibold hover:bg-yellow-600 transition shadow-md">Explorer
+                                les promotions</a>
                         </div>
 
                         <!-- Bouton menu mobile -->
@@ -88,46 +84,215 @@
                     class="absolute bottom-0 right-0 w-64 h-64 bg-yellow-500 rounded-full filter blur-xl"></div>
             </div>
 
-            <div class="container mx-auto px-6 z-10 text-center"
-                data-aos="fade-up">
+            <div
+                class="animate-fade-up container mx-auto px-6 z-10 text-center">
                 <h1 class="text-5xl md:text-7xl font-bold mb-6 text-gray-800">
-                    <span class="morphing-text">Institut Africain
-                        d'Informatique</span>
+                    <span class="text-yellow-500">Promotions</span> IAI Gabon
                 </h1>
                 <p
                     class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-                    Excellence académique et innovation technologique au service
-                    du développement africain
+                    Découvrez les promotions successives de l'Institut Africain
+                    d'Informatique depuis 2019
                 </p>
-                <a href="page2.html"
-                    class="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg">
-                    Commencer l'exploration
-                </a>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="page4.html"
+                        class="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg">
+                        Explorer les promotions
+                    </a>
+                    <a href="#promotions"
+                        class="inline-block bg-white hover:bg-gray-100 text-gray-800 font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg">
+                        Voir les dernières promotions
+                    </a>
+                </div>
             </div>
 
             <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-                <a href="#formations" class="animate-bounce inline-block">
+                <a href="#promotions" class="animate-bounce inline-block">
                     <i data-lucide="chevron-down"
                         class="w-10 h-10 text-yellow-500"></i>
                 </a>
             </div>
         </section>
 
-        <!-- Formations Section -->
-        <section id="formations" class="py-20 bg-white">
+        <!-- Promotions Section -->
+        <section id="promotions" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <h2
-                    class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800"
-                    data-aos="fade-up">
-                    Nos <span class="text-yellow-500">Parcours</span>
-                    Académiques
+                    class="animate-fade-up text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+                    Nos <span class="text-yellow-500">Promotions</span> Récentes
+                </h2>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Promotion 2024 -->
+                    <div
+                        class="delay-100ms animate-fade-up promotion-card rounded-xl overflow-hidden p-6 backdrop-blur-md bg-[#FFE4C4]/30 border border-white/20 shadow-lg shadow-orange-500/20 hover:shadow-orange-500/30 transition-all duration-300">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3
+                                    class="text-2xl font-bold text-gray-800">Promotion
+                                    2024</h3>
+                                <p
+                                    class="text-yellow-600 font-semibold">Dernière
+                                    promotion</p>
+                            </div>
+                            <span
+                                class="bg-[#FFA500]/20 text-[#FF8C00] px-3 py-1 rounded-full text-sm font-bold">Nouveau</span>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex items-center text-gray-700 mb-2">
+                                <i data-lucide="users"
+                                    class="w-5 h-5 mr-2 text-[#FF8C00]"></i>
+                                <span>120 étudiants</span>
+                            </div>
+                            <div class="flex items-center text-gray-700">
+                                <i data-lucide="award"
+                                    class="w-5 h-5 mr-2 text-[#FF8C00]"></i>
+                                <span>15 mentions Excellent</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-6">La promotion 2024 se
+                            distingue par ses projets innovants en intelligence
+                            artificielle et cybersécurité.</p>
+                        <a href="page4.html?promo=2024"
+                            class="inline-block bg-[#FF8C00] hover:bg-[#FF7F50] text-white font-semibold py-2 px-6 rounded-lg transition">
+                            Voir les étudiants <i data-lucide="arrow-right"
+                                class="w-4 h-4 inline ml-1"></i>
+                        </a>
+                    </div>
+
+                    <!-- Promotion 2023 -->
+                    <div
+                        class="delay-200ms animate-fade-up promotion-card rounded-xl overflow-hidden p-6 backdrop-blur-md bg-[#FFE4C4]/30 border border-white/20 shadow-lg shadow-orange-500/20 hover:shadow-orange-500/30 transition-all duration-300">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3
+                                    class="text-2xl font-bold text-gray-800">Promotion
+                                    2023</h3>
+                                <p
+                                    class="text-yellow-600 font-semibold">Excellence
+                                    académique</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex items-center text-gray-700 mb-2">
+                                <i data-lucide="users"
+                                    class="w-5 h-5 mr-2 text-[#FF8C00]"></i>
+                                <span>108 étudiants</span>
+                            </div>
+                            <div class="flex items-center text-gray-700">
+                                <i data-lucide="award"
+                                    class="w-5 h-5 mr-2 text-[#FF8C00]"></i>
+                                <span>12 mentions Excellent</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-6">Cette promotion s'est
+                            illustrée par ses projets en big data et son taux
+                            d'insertion professionnelle record.</p>
+                        <a href="page4.html?promo=2023"
+                            class="inline-block bg-[#FF8C00] hover:bg-[#FF7F50] text-white font-semibold py-2 px-6 rounded-lg transition">
+                            Voir les étudiants <i data-lucide="arrow-right"
+                                class="w-4 h-4 inline ml-1"></i>
+                        </a>
+                    </div>
+
+                    <!-- Promotion 2022 -->
+                    <div
+                        class="delay-300ms animate-fade-up promotion-card rounded-xl overflow-hidden p-6 backdrop-blur-md bg-[#FFE4C4]/30 border border-white/20 shadow-lg shadow-orange-500/20 hover:shadow-orange-500/30 transition-all duration-300">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3
+                                    class="text-2xl font-bold text-gray-800">Promotion
+                                    2022</h3>
+                                <p
+                                    class="text-yellow-600 font-semibold">Spécialisation
+                                    technique</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex items-center text-gray-700 mb-2">
+                                <i data-lucide="users"
+                                    class="w-5 h-5 mr-2 text-[#FF8C00]"></i>
+                                <span>95 étudiants</span>
+                            </div>
+                            <div class="flex items-center text-gray-700">
+                                <i data-lucide="award"
+                                    class="w-5 h-5 mr-2 text-[#FF8C00]"></i>
+                                <span>10 mentions Excellent</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-6">Une promotion marquée par
+                            des projets ambitieux en ingénierie des données et
+                            DevOps.</p>
+                        <a href="page4.html?promo=2022"
+                            class="inline-block bg-[#FF8C00] hover:bg-[#FF7F50] text-white font-semibold py-2 px-6 rounded-lg transition">
+                            Voir les étudiants <i data-lucide="arrow-right"
+                                class="w-4 h-4 inline ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="page4.html"
+                        class="inline-flex items-center text-[#FF8C00] font-semibold hover:text-[#FF6347]">
+                        Voir toutes les promotions (2019-2024)
+                        <i data-lucide="chevron-right" class="w-5 h-5 ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Statistiques Section -->
+        <section class="py-20 bg-yellow-50">
+            <div class="container mx-auto px-6">
+                <h2
+                    class="animate-fade-up text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+                    Chiffres <span class="text-yellow-500">Clés</span> des
+                    Promotions
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div
+                        class="delay-100ms animate-fade-up bg-white rounded-xl p-6 shadow-lg text-center">
+                        <div
+                            class="text-4xl font-bold text-yellow-500 mb-2">540+</div>
+                        <div class="text-gray-600">Étudiants formés</div>
+                    </div>
+                    <div
+                        class="delay-200ms animate-fade-up bg-white rounded-xl p-6 shadow-lg text-center">
+                        <div
+                            class="text-4xl font-bold text-yellow-500 mb-2">6</div>
+                        <div class="text-gray-600">Promotions</div>
+                    </div>
+                    <div
+                        class="delay-300ms animate-fade-up bg-white rounded-xl p-6 shadow-lg text-center">
+                        <div
+                            class="text-4xl font-bold text-yellow-500 mb-2">85%</div>
+                        <div class="text-gray-600">Taux d'insertion</div>
+                    </div>
+                    <div
+                        class="delay-400ms animate-fade-up bg-white rounded-xl p-6 shadow-lg text-center"
+                        data-aos="fade-up" data-aos-delay="400">
+                        <div
+                            class="text-4xl font-bold text-yellow-500 mb-2">10+</div>
+                        <div class="text-gray-600">Pays représentés</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formations Section (simplifiée) -->
+        <section id="formations" class="py-20 bg-yellow-50">
+            <div class="container mx-auto px-6">
+                <h2
+                    class="animate-fade-up text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+                    Nos <span class="text-yellow-500">Formations</span>
                 </h2>
 
                 <div
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- AP Card -->
-                    <div class="glassmorphism rounded-xl p-6 shadow-lg"
-                        data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="delay-100ms animate-fade-up bg-white rounded-xl p-6 shadow-lg">
                         <div
                             class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
                             <i data-lucide="code"
@@ -136,26 +301,17 @@
                         <h3 class="text-xl font-bold mb-2 text-gray-800">AP
                             (Analyste Programmeur)</h3>
                         <p class="text-gray-600 mb-4">Formation intensive en
-                            développement logiciel et conception
-                            d'applications.</p>
-                        <ul class="space-y-2">
-                            <li class="flex items-center">
-                                <i data-lucide="check-circle"
-                                    class="w-5 h-5 text-yellow-500 mr-2"></i>
-                                <span class="text-gray-600">Durée: 3 ans</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i data-lucide="check-circle"
-                                    class="w-5 h-5 text-yellow-500 mr-2"></i>
-                                <span class="text-gray-600">Diplôme:
-                                    Licence</span>
-                            </li>
-                        </ul>
+                            développement logiciel.</p>
+                        <a href="page4.html?parcours=AP"
+                            class="text-yellow-600 hover:text-yellow-700 font-semibold">
+                            Voir les promotions AP <i data-lucide="arrow-right"
+                                class="w-4 h-4 inline ml-1"></i>
+                        </a>
                     </div>
 
                     <!-- MIAGE Card -->
-                    <div class="glassmorphism rounded-xl p-6 shadow-lg"
-                        data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="delay-200ms animate-fade-up bg-white rounded-xl p-6 shadow-lg">
                         <div
                             class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
                             <i data-lucide="briefcase"
@@ -164,25 +320,18 @@
                         <h3
                             class="text-xl font-bold mb-2 text-gray-800">MIAGE</h3>
                         <p class="text-gray-600 mb-4">Méthodes Informatiques
-                            Appliquées à la Gestion des Entreprises.</p>
-                        <ul class="space-y-2">
-                            <li class="flex items-center">
-                                <i data-lucide="check-circle"
-                                    class="w-5 h-5 text-yellow-500 mr-2"></i>
-                                <span class="text-gray-600">Durée: 2 ans</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i data-lucide="check-circle"
-                                    class="w-5 h-5 text-yellow-500 mr-2"></i>
-                                <span class="text-gray-600">Diplôme:
-                                    Formation Universitaire</span>
-                            </li>
-                        </ul>
+                            Appliquées à la Gestion.</p>
+                        <a href="page4.html?parcours=MIAGE"
+                            class="text-yellow-600 hover:text-yellow-700 font-semibold">
+                            Voir les promotions MIAGE <i
+                                data-lucide="arrow-right"
+                                class="w-4 h-4 inline ml-1"></i>
+                        </a>
                     </div>
 
                     <!-- Master Card -->
-                    <div class="glassmorphism rounded-xl p-6 shadow-lg"
-                        data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="bg-white rounded-xl p-6 shadow-lg delay-300ms animate-fade-up">
                         <div
                             class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
                             <i data-lucide="graduation-cap"
@@ -191,25 +340,18 @@
                         <h3
                             class="text-xl font-bold mb-2 text-gray-800">Master</h3>
                         <p class="text-gray-600 mb-4">Spécialisations avancées
-                            en technologies de l'information.</p>
-                        <ul class="space-y-2">
-                            <li class="flex items-center">
-                                <i data-lucide="check-circle"
-                                    class="w-5 h-5 text-yellow-500 mr-2"></i>
-                                <span class="text-gray-600">Durée: 2 ans</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i data-lucide="check-circle"
-                                    class="w-5 h-5 text-yellow-500 mr-2"></i>
-                                <span class="text-gray-600">Filières: IA, Big
-                                    Data, etc.</span>
-                            </li>
-                        </ul>
+                            en technologies.</p>
+                        <a href="page4.html?parcours=Master"
+                            class="text-yellow-600 hover:text-yellow-700 font-semibold">
+                            Voir les promotions Master <i
+                                data-lucide="arrow-right"
+                                class="w-4 h-4 inline ml-1"></i>
+                        </a>
                     </div>
 
                     <!-- ING Card -->
-                    <div class="glassmorphism rounded-xl p-6 shadow-lg"
-                        data-aos="fade-up" data-aos-delay="400">
+                    <div
+                        class="delay-400ms animate-fade-up bg-white rounded-xl p-6 shadow-lg">
                         <div
                             class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
                             <i data-lucide="cpu"
@@ -217,22 +359,14 @@
                         </div>
                         <h3 class="text-xl font-bold mb-2 text-gray-800">Cycle
                             d'Ingénieur</h3>
-                        <p class="text-gray-600 mb-4">Formation d'excellence
-                            pour devenir ingénieur en informatique.</p>
-                        <ul class="space-y-2">
-                            <li class="flex items-center">
-                                <i data-lucide="check-circle"
-                                    class="w-5 h-5 text-yellow-500 mr-2"></i>
-                                <span class="text-gray-600">Durée:
-                                    3ans</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i data-lucide="check-circle"
-                                    class="w-5 h-5 text-yellow-500 mr-2"></i>
-                                <span class="text-gray-600">Spécialisations
-                                    variées</span>
-                            </li>
-                        </ul>
+                        <p class="text-gray-600 mb-4">Formation d'excellence en
+                            ingénierie.</p>
+                        <a href="page4.html?parcours=Ingénieur"
+                            class="text-yellow-600 hover:text-yellow-700 font-semibold">
+                            Voir les promotions Ingénieur <i
+                                data-lucide="arrow-right"
+                                class="w-4 h-4 inline ml-1"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -244,144 +378,200 @@
                 <h2
                     class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800"
                     data-aos="fade-up">
-                    Nos <span class="text-yellow-500">Filières</span>
-                    Spécialisées
+                    Évolution des <span class="text-yellow-500">Filières</span>
                 </h2>
 
                 <div
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- IA-DataScience -->
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                    <!-- Période Historique (Avant 2024) -->
                     <div
-                        class="bg-white rounded-xl p-6 shadow-lg transform transition hover:scale-105"
-                        data-aos="fade-up" data-aos-delay="100">
+                        class="rounded-xl p-6 backdrop-blur-md bg-gradient-to-br from-amber-100/40 to-amber-50/70 shadow-lg shadow-amber-500/10 transform transition hover:scale-[1.02] hover:shadow-amber-500/20"
+                        data-aos="fade-right" data-aos-delay="100">
                         <div class="flex items-center mb-4">
                             <div
-                                class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
-                                <i data-lucide="brain-circuit"
-                                    class="w-6 h-6 text-yellow-500"></i>
+                                class="w-12 h-12 bg-amber-100/50 rounded-full flex items-center justify-center mr-4 backdrop-blur-sm">
+                                <i data-lucide="clock"
+                                    class="w-6 h-6 text-amber-600"></i>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-800">IA &
-                                Data Science</h3>
+                            <div>
+                                <h3
+                                    class="text-xl font-bold text-gray-800">Période
+                                    2019-2023</h3>
+                                <p class="text-amber-600 text-sm">Filière
+                                    unique</p>
+                            </div>
                         </div>
-                        <p class="text-gray-600 mb-4">Maîtrisez l'intelligence
-                            artificielle, le machine learning et l'analyse des
-                            données.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span
-                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Python</span>
-                            <span
-                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">TensorFlow</span>
-                            <span
-                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Data
-                                Mining</span>
+                        <div class="pl-16">
+                            <div class="flex items-start mb-6">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div
+                                        class="w-8 h-8 bg-amber-100/60 rounded-full flex items-center justify-center backdrop-blur-sm">
+                                        <i data-lucide="cpu"
+                                            class="w-4 h-4 text-amber-600"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4
+                                        class="font-semibold text-gray-800">Ingénieurs
+                                        de Conception</h4>
+                                    <p class="text-gray-700 mt-1">La seule
+                                        filière disponible formant des
+                                        ingénieurs polyvalents en
+                                        informatique.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="bg-amber-100/50 text-amber-800 px-3 py-1 rounded-full text-sm backdrop-blur-sm">Programmation</span>
+                                <span
+                                    class="bg-amber-100/50 text-amber-800 px-3 py-1 rounded-full text-sm backdrop-blur-sm">Réseaux</span>
+                                <span
+                                    class="bg-amber-100/50 text-amber-800 px-3 py-1 rounded-full text-sm backdrop-blur-sm">Bases
+                                    de données</span>
+                                <span
+                                    class="bg-amber-100/50 text-amber-800 px-3 py-1 rounded-full text-sm backdrop-blur-sm">Systèmes</span>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Big Data -->
+                    <!-- Nouveautés 2024 -->
                     <div
-                        class="bg-white rounded-xl p-6 shadow-lg transform transition hover:scale-105"
-                        data-aos="fade-up" data-aos-delay="200">
+                        class="rounded-xl p-6 backdrop-blur-md bg-gradient-to-br from-amber-100/40 to-amber-50/70 shadow-lg shadow-amber-500/10 transform transition hover:scale-[1.02] hover:shadow-amber-500/20"
+                        data-aos="fade-left" data-aos-delay="100">
                         <div class="flex items-center mb-4">
                             <div
-                                class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
-                                <i data-lucide="database"
-                                    class="w-6 h-6 text-yellow-500"></i>
+                                class="w-12 h-12 bg-amber-100/50 rounded-full flex items-center justify-center mr-4 backdrop-blur-sm">
+                                <i data-lucide="sparkles"
+                                    class="w-6 h-6 text-amber-600"></i>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-800">Big
-                                Data</h3>
+                            <div>
+                                <h3
+                                    class="text-xl font-bold text-gray-800">Nouveautés
+                                    2024</h3>
+                                <p
+                                    class="text-amber-600 text-sm">Spécialisations</p>
+                            </div>
                         </div>
-                        <p class="text-gray-600 mb-4">Apprenez à gérer et
-                            analyser des volumes massifs de données avec les
-                            technologies modernes.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span
-                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Hadoop</span>
-                            <span
-                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Spark</span>
-                            <span
-                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">NoSQL</span>
+                        <p class="text-gray-700 mb-4 pl-16">À partir de 2024,
+                            l'IAI Gabon propose des filières spécialisées :</p>
+
+                        <div class="grid grid-cols-1 gap-4 pl-16">
+                            <!-- IA-DataScience -->
+                            <div class="flex items-start" data-aos="fade-up"
+                                data-aos-delay="150">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div
+                                        class="w-8 h-8 bg-blue-100/60 rounded-full flex items-center justify-center backdrop-blur-sm">
+                                        <i data-lucide="brain-circuit"
+                                            class="w-4 h-4 text-blue-600"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold text-gray-800">IA &
+                                        Data Science</h4>
+                                    <div class="flex flex-wrap gap-2 mt-2">
+                                        <span
+                                            class="bg-blue-100/50 text-blue-800 px-2 py-0.5 rounded-full text-xs backdrop-blur-sm">Python</span>
+                                        <span
+                                            class="bg-blue-100/50 text-blue-800 px-2 py-0.5 rounded-full text-xs backdrop-blur-sm">TensorFlow</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Big Data -->
+                            <div class="flex items-start" data-aos="fade-up"
+                                data-aos-delay="200">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div
+                                        class="w-8 h-8 bg-purple-100/60 rounded-full flex items-center justify-center backdrop-blur-sm">
+                                        <i data-lucide="database"
+                                            class="w-4 h-4 text-purple-600"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold text-gray-800">Big
+                                        Data</h4>
+                                    <div class="flex flex-wrap gap-2 mt-2">
+                                        <span
+                                            class="bg-purple-100/50 text-purple-800 px-2 py-0.5 rounded-full text-xs backdrop-blur-sm">Hadoop</span>
+                                        <span
+                                            class="bg-purple-100/50 text-purple-800 px-2 py-0.5 rounded-full text-xs backdrop-blur-sm">Spark</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CyberSécurité -->
+                            <div class="flex items-start" data-aos="fade-up"
+                                data-aos-delay="250">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div
+                                        class="w-8 h-8 bg-red-100/60 rounded-full flex items-center justify-center backdrop-blur-sm">
+                                        <i data-lucide="shield"
+                                            class="w-4 h-4 text-red-600"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4
+                                        class="font-semibold text-gray-800">CyberSécurité</h4>
+                                    <div class="flex flex-wrap gap-2 mt-2">
+                                        <span
+                                            class="bg-red-100/50 text-red-800 px-2 py-0.5 rounded-full text-xs backdrop-blur-sm">Pentesting</span>
+                                        <span
+                                            class="bg-red-100/50 text-red-800 px-2 py-0.5 rounded-full text-xs backdrop-blur-sm">Cryptographie</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- DevOps -->
+                            <div class="flex items-start" data-aos="fade-up"
+                                data-aos-delay="300">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div
+                                        class="w-8 h-8 bg-green-100/60 rounded-full flex items-center justify-center backdrop-blur-sm">
+                                        <i data-lucide="server"
+                                            class="w-4 h-4 text-green-600"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4
+                                        class="font-semibold text-gray-800">DevOps</h4>
+                                    <div class="flex flex-wrap gap-2 mt-2">
+                                        <span
+                                            class="bg-green-100/50 text-green-800 px-2 py-0.5 rounded-full text-xs backdrop-blur-sm">Docker</span>
+                                        <span
+                                            class="bg-green-100/50 text-green-800 px-2 py-0.5 rounded-full text-xs backdrop-blur-sm">Kubernetes</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- CyberSécurité -->
+                <!-- Timeline Animation -->
+                <div class="mt-16 relative" data-aos="fade-up">
                     <div
-                        class="bg-white rounded-xl p-6 shadow-lg transform transition hover:scale-105"
-                        data-aos="fade-up" data-aos-delay="300">
-                        <div class="flex items-center mb-4">
-                            <div
-                                class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
-                                <i data-lucide="shield"
-                                    class="w-6 h-6 text-yellow-500"></i>
-                            </div>
-                            <h3
-                                class="text-xl font-bold text-gray-800">CyberSécurité</h3>
-                        </div>
-                        <p class="text-gray-600 mb-4">Devenez expert en sécurité
-                            informatique et protection des systèmes
-                            d'information.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span
-                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Ethical
-                                Hacking</span>
-                            <span
-                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Cryptographie</span>
-                            <span
-                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Pentesting</span>
-                        </div>
-                    </div>
+                        class="absolute left-1/2 top-0 h-full w-0.5 bg-amber-200 transform -translate-x-1/2"></div>
 
-                    <!-- DevOps -->
-                    <div
-                        class="bg-white rounded-xl p-6 shadow-lg transform transition hover:scale-105"
-                        data-aos="fade-up" data-aos-delay="400">
-                        <div class="flex items-center mb-4">
+                    <div class="relative flex justify-between items-center">
+                        <div class="text-center w-1/2 pr-8">
                             <div
-                                class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
-                                <i data-lucide="server"
-                                    class="w-6 h-6 text-yellow-500"></i>
+                                class="inline-block bg-amber-100/50 text-amber-800 px-4 py-2 rounded-lg backdrop-blur-sm">
+                                <p class="font-semibold">2019-2023</p>
+                                <p class="text-sm">Ingénieurs de Conception</p>
                             </div>
-                            <h3
-                                class="text-xl font-bold text-gray-800">DevOps</h3>
                         </div>
-                        <p class="text-gray-600 mb-4">Intégrez les méthodologies
-                            DevOps pour un développement logiciel agile et
-                            efficace.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span
-                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Docker</span>
-                            <span
-                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Kubernetes</span>
-                            <span
-                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">CI/CD</span>
-                        </div>
-                    </div>
 
-                    <!-- Ingénierie des données -->
-                    <div
-                        class="bg-white rounded-xl p-6 shadow-lg transform transition hover:scale-105"
-                        data-aos="fade-up" data-aos-delay="500">
-                        <div class="flex items-center mb-4">
-                            <div
-                                class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
-                                <i data-lucide="binary"
-                                    class="w-6 h-6 text-yellow-500"></i>
-                            </div>
-                            <h3
-                                class="text-xl font-bold text-gray-800">Ingénierie
-                                des Données</h3>
+                        <div
+                            class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white z-10 shadow-lg shadow-amber-500/30">
+                            <i data-lucide="chevrons-right" class="w-6 h-6"></i>
                         </div>
-                        <p class="text-gray-600 mb-4">Concevez et implémentez
-                            des architectures de données robustes et
-                            évolutives.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span
-                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">ETL</span>
-                            <span
-                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Data
-                                Warehousing</span>
-                            <span
-                                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Data
-                                Pipelines</span>
+
+                        <div class="text-center w-1/2 pl-8">
+                            <div
+                                class="inline-block bg-amber-100/50 text-amber-800 px-4 py-2 rounded-lg backdrop-blur-sm">
+                                <p class="font-semibold">2024</p>
+                                <p class="text-sm">Spécialisations</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -392,8 +582,7 @@
         <section id="pays" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <h2
-                    class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800"
-                    data-aos="fade-up">
+                    class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800 animate-fade-up">
                     Pays <span class="text-yellow-500">Membres</span> de l'IAI
                 </h2>
 
@@ -401,8 +590,7 @@
                     class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
                     <!-- Gabon -->
                     <div
-                        class="country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md"
-                        data-aos="zoom-in" data-aos-delay="100">
+                        class="animate-zoom-in delay-100ms  country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md">
                         <div
                             class=" flex items-center justify-center mx-auto mb-3">
                             <img src="assets/drapeau-gabonais.png" alt
@@ -414,10 +602,9 @@
 
                     <!-- Burkina Faso -->
                     <div
-                        class="country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md"
-                        data-aos="zoom-in" data-aos-delay="200">
+                        class="animate-zoom-in delay-200ms country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md">
                         <div
-                            class=" flex items-center justify-center mx-auto mb-3">
+                            class="flex items-center justify-center mx-auto mb-3">
                             <img src="assets/monde.png" alt
                                 class="w-16 h-16 bg-yellow-100 rounded-full">
                         </div>
@@ -427,8 +614,7 @@
 
                     <!-- Cameroun -->
                     <div
-                        class="country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md"
-                        data-aos="zoom-in" data-aos-delay="250">
+                        class="animate-zoom-in delay-250ms country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md">
                         <div
                             class=" flex items-center justify-center mx-auto mb-3">
                             <img src="assets/cameroun.png" alt
@@ -440,12 +626,11 @@
 
                     <!-- Centrafrique -->
                     <div
-                        class="country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md"
-                        data-aos="zoom-in" data-aos-delay="300">
+                        class="animate-zoom-in delay-300ms country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md">
                         <div
-                            class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <i data-lucide="flag"
-                                class="w-8 h-8 text-yellow-500"></i>
+                            class=" flex items-center justify-center mx-auto mb-3">
+                            <img src="assets/central-african-republic-.png"
+                                class="w-16 h-16 bg-yellow-100 rounded-full" />
                         </div>
                         <h3
                             class="font-semibold text-gray-800">Centrafrique</h3>
@@ -453,8 +638,7 @@
 
                     <!-- Côte d'Ivoire -->
                     <div
-                        class="country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md"
-                        data-aos="zoom-in" data-aos-delay="350">
+                        class="animate-zoom-in delay-350ms country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md">
                         <div
                             class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
                             <img src="assets/cote-divoire.png" alt>
@@ -465,8 +649,7 @@
 
                     <!-- Congo -->
                     <div
-                        class="country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md"
-                        data-aos="zoom-in" data-aos-delay="400">
+                        class="animate-zoom-in delay-400ms country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md">
                         <div
                             class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
                             <img
@@ -479,8 +662,7 @@
 
                     <!-- Niger -->
                     <div
-                        class="country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md"
-                        data-aos="zoom-in" data-aos-delay="450">
+                        class="animate-zoom-in delay-450ms country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md">
                         <div
                             class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
                             <img src="assets/niger.png" alt>
@@ -491,8 +673,7 @@
 
                     <!-- Sénégal -->
                     <div
-                        class="country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md"
-                        data-aos="zoom-in" data-aos-delay="500">
+                        class="animate-zoom-in delay-500ms country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md">
                         <div
                             class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
                             <img src="assets/senegal.png" alt>
@@ -502,8 +683,7 @@
 
                     <!-- Tchad -->
                     <div
-                        class="country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md"
-                        data-aos="zoom-in" data-aos-delay="550">
+                        class="animate-zoom-in delay-550ms country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md">
                         <div
                             class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
                             <img src="assets/tchad.png" alt>
@@ -513,8 +693,7 @@
 
                     <!-- Togo -->
                     <div
-                        class="country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md"
-                        data-aos="zoom-in" data-aos-delay="600">
+                        class="animate-zoom-in delay-600ms country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md">
                         <div
                             class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
                             <img src="assets/aller.png" alt>
@@ -525,8 +704,7 @@
 
                     <!-- Congo Brazzaville -->
                     <div
-                        class="country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md"
-                        data-aos="zoom-in" data-aos-delay="650">
+                        class="animate-zoom-in delay-650ms country-card bg-yellow-50 rounded-lg p-4 text-center shadow-md">
                         <div
                             class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
                             <img src="assets/drapeau.png" alt>
@@ -538,111 +716,184 @@
             </div>
         </section>
 
-        <!-- Vie Étudiante Section -->
-        <section id="vie-etudiante" class="py-20 bg-yellow-50">
+        <!-- Étudiants en vedette -->
+        <section class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <h2
-                    class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800"
-                    data-aos="fade-up">
-                    Vie <span class="text-yellow-500">Étudiante</span> à l'IAI
+                    class=" animate-fade-up text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+                    Anciens <span class="text-yellow-500">Étudiants</span>
+                    Remarquables
                 </h2>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Internat -->
-                    <div class="glassmorphism rounded-xl p-6 shadow-lg"
-                        data-aos="fade-right">
-                        <div class="flex items-center mb-6">
-                            <div
-                                class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
-                                <i data-lucide="home"
-                                    class="w-8 h-8 text-yellow-500"></i>
-                            </div>
-                            <h3
-                                class="text-2xl font-bold text-gray-800">Internat</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Étudiant 1 -->
+                    <div
+                        class="delay-100ms animate-fade-up student-card bg-white rounded-xl overflow-hidden shadow-lg relative">
+                        <div class="h-64 bg-yellow-100 overflow-hidden">
+                            <img
+                                src="https://randomuser.me/api/portraits/men/1.jpg"
+                                alt="Jean Ndong"
+                                class="w-full h-full object-cover">
                         </div>
-                        <p class="text-gray-600 mb-4">L'IAI dispose d'un
-                            internat moderne et confortable pour accueillir les
-                            étudiants venant de différents pays.</p>
-                        <p class="text-gray-600">Les chambres sont équipées de
-                            toutes les commodités nécessaires pour un séjour
-                            agréable et propice aux études.</p>
+                        <div class="p-4">
+                            <h3
+                                class="text-xl font-bold mb-1 text-gray-800">Jean
+                                Ndong</h3>
+                            <p
+                                class="text-yellow-500 font-semibold mb-2">Promotion
+                                2019 - AP</p>
+                            <div
+                                class="flex items-center text-sm text-gray-500 mb-2">
+                                <i data-lucide="map-pin"
+                                    class="w-4 h-4 mr-1"></i>
+                                <span>Gabon</span>
+                            </div>
+                            <div
+                                class="flex items-center text-sm text-gray-500">
+                                <i data-lucide="award" class="w-4 h-4 mr-1"></i>
+                                <span>Mention Très Bien</span>
+                            </div>
+                        </div>
+                        <div class="student-info">
+                            <h3
+                                class="text-xl font-bold mb-3 text-gray-800">Parcours</h3>
+                            <p class="text-gray-600 mb-2">Développeur senior
+                                chez Orange Gabon</p>
+                            <p class="text-gray-600">Spécialisé en applications
+                                mobiles</p>
+                            <a href="page4.html?promo=2019"
+                                class="inline-block mt-3 text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
+                                Voir sa promotion <i data-lucide="arrow-right"
+                                    class="w-4 h-4 inline ml-1"></i>
+                            </a>
+                        </div>
                     </div>
 
-                    <!-- Restaurant Universitaire -->
-                    <div class="glassmorphism rounded-xl p-6 shadow-lg"
-                        data-aos="fade-left">
-                        <div class="flex items-center mb-6">
-                            <div
-                                class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
-                                <i data-lucide="utensils"
-                                    class="w-8 h-8 text-yellow-500"></i>
-                            </div>
-                            <h3
-                                class="text-2xl font-bold text-gray-800">Restaurant
-                                Universitaire</h3>
+                    <!-- Étudiant 2 -->
+                    <div
+                        class="delay-200ms animate-fade-up student-card bg-white rounded-xl overflow-hidden shadow-lg relative">
+                        <div class="h-64 bg-yellow-100 overflow-hidden">
+                            <img
+                                src="https://randomuser.me/api/portraits/women/2.jpg"
+                                alt="Sarah Mbala"
+                                class="w-full h-full object-cover">
                         </div>
-                        <p class="text-gray-600 mb-4">Géré par le CNOU, le
-                            restaurant universitaire propose des repas
-                            équilibrés et variés à des prix accessibles.</p>
-                        <p class="text-gray-600">Ouvert du lundi au samedi, il
-                            est un lieu de convivialité où les étudiants se
-                            retrouvent entre cours.</p>
+                        <div class="p-4">
+                            <h3
+                                class="text-xl font-bold mb-1 text-gray-800">Sarah
+                                Mbala</h3>
+                            <p
+                                class="text-yellow-500 font-semibold mb-2">Promotion
+                                2020 - MIAGE</p>
+                            <div
+                                class="flex items-center text-sm text-gray-500 mb-2">
+                                <i data-lucide="map-pin"
+                                    class="w-4 h-4 mr-1"></i>
+                                <span>Cameroun</span>
+                            </div>
+                            <div
+                                class="flex items-center text-sm text-gray-500">
+                                <i data-lucide="award" class="w-4 h-4 mr-1"></i>
+                                <span>Mention Excellent</span>
+                            </div>
+                        </div>
+                        <div class="student-info">
+                            <h3
+                                class="text-xl font-bold mb-3 text-gray-800">Parcours</h3>
+                            <p class="text-gray-600 mb-2">Consultante ERP chez
+                                Deloitte Cameroun</p>
+                            <p class="text-gray-600">Expert en systèmes
+                                d'information</p>
+                            <a href="page4.html?promo=2020"
+                                class="inline-block mt-3 text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
+                                Voir sa promotion <i data-lucide="arrow-right"
+                                    class="w-4 h-4 inline ml-1"></i>
+                            </a>
+                        </div>
                     </div>
 
-                    <!-- Activités Extra-scolaires -->
-                    <div class="glassmorphism rounded-xl p-6 shadow-lg"
-                        data-aos="fade-right">
-                        <div class="flex items-center mb-6">
-                            <div
-                                class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
-                                <i data-lucide="users"
-                                    class="w-8 h-8 text-yellow-500"></i>
-                            </div>
-                            <h3
-                                class="text-2xl font-bold text-gray-800">Activités
-                                Extra-scolaires</h3>
+                    <!-- Étudiant 3 -->
+                    <div
+                        class="delay-300ms animate-fade-up student-card bg-white rounded-xl overflow-hidden shadow-lg relative">
+                        <div class="h-64 bg-yellow-100 overflow-hidden">
+                            <img
+                                src="https://randomuser.me/api/portraits/men/3.jpg"
+                                alt="Moussa Traore"
+                                class="w-full h-full object-cover">
                         </div>
-                        <p class="text-gray-600 mb-4">L'IAI encourage les
-                            activités parascolaires avec plusieurs clubs :
-                            football, basket, informatique, etc.</p>
-                        <p class="text-gray-600">La semaine de l'étudiant est un
-                            moment fort avec des compétitions, des conférences
-                            et des soirées chic.</p>
+                        <div class="p-4">
+                            <h3
+                                class="text-xl font-bold mb-1 text-gray-800">Moussa
+                                Traore</h3>
+                            <p
+                                class="text-yellow-500 font-semibold mb-2">Promotion
+                                2021 - Master Big Data</p>
+                            <div
+                                class="flex items-center text-sm text-gray-500 mb-2">
+                                <i data-lucide="map-pin"
+                                    class="w-4 h-4 mr-1"></i>
+                                <span>Burkina Faso</span>
+                            </div>
+                            <div
+                                class="flex items-center text-sm text-gray-500">
+                                <i data-lucide="award" class="w-4 h-4 mr-1"></i>
+                                <span>Mention Excellent</span>
+                            </div>
+                        </div>
+                        <div class="student-info">
+                            <h3
+                                class="text-xl font-bold mb-3 text-gray-800">Parcours</h3>
+                            <p class="text-gray-600 mb-2">Data Scientist chez
+                                MTN Burkina</p>
+                            <p class="text-gray-600">Spécialiste en machine
+                                learning</p>
+                            <a href="page4.html?promo=2021"
+                                class="inline-block mt-3 text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
+                                Voir sa promotion <i data-lucide="arrow-right"
+                                    class="w-4 h-4 inline ml-1"></i>
+                            </a>
+                        </div>
                     </div>
+                </div>
 
-                    <!-- Partenariats -->
-                    <div class="glassmorphism rounded-xl p-6 shadow-lg"
-                        data-aos="fade-left">
-                        <div class="flex items-center mb-6">
-                            <div
-                                class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
-                                <i data-lucide="handshake"
-                                    class="w-8 h-8 text-yellow-500"></i>
-                            </div>
-                            <h3
-                                class="text-2xl font-bold text-gray-800">Partenariats
-                                Professionnels</h3>
-                        </div>
-                        <p class="text-gray-600 mb-4">L'IAI a développé un
-                            réseau de partenariats avec des entreprises
-                            technologiques et diverses pour faciliter
-                            l'insertion professionnelle.</p>
-                        <p class="text-gray-600">Stages, alternance et
-                            recrutement sont facilités grâce à ce réseau
-                            étendu.</p>
-                    </div>
+                <div class="text-center mt-12">
+                    <a href="page4.html"
+                        class="inline-flex items-center text-yellow-600 font-semibold hover:text-yellow-700">
+                        Voir tous les anciens étudiants
+                        <i data-lucide="chevron-right" class="w-5 h-5 ml-1"></i>
+                    </a>
                 </div>
             </div>
         </section>
 
+        <!-- CTA Section -->
+        <section
+            class="py-20 bg-gradient-to-r from-yellow-500 to-yellow-400 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="animate-fade-up text-3xl md:text-4xl font-bold mb-6">
+                    Explorez toutes nos promotions
+                </h2>
+                <p
+                    class="delay-100ms animate-fade-up text-xl mb-8 max-w-3xl mx-auto">
+                    Découvrez les étudiants, les parcours et les réussites de
+                    chaque promotion de l'IAI Gabon
+                </p>
+                <a href="page4.html"
+                    class="delay-200ms animate-fade-up inline-block bg-white text-yellow-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg">
+                    Accéder à l'explorateur <i data-lucide="arrow-right"
+                        class="w-5 h-5 inline ml-1"></i>
+                </a>
+            </div>
+        </section>
+
         <!-- Footer -->
-        <footer class="bg-yellow-400 text-gray-800 py-12">
+        <footer class="bg-yellow-500 text-gray-800 py-12">
             <div class="container mx-auto px-6">
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div>
-                        <h3 class="text-xl font-bold mb-4">IAI Gabon</h3>
-                        <p class="mb-4">Institut Africain d'Informatique - Siège
-                            à Libreville, Gabon</p>
+                        <h3 class="text-xl font-bold mb-4">IAI Promotions</h3>
+                        <p class="mb-4">Portail des promotions de l'Institut
+                            Africain d'Informatique - Gabon</p>
                         <div class="flex space-x-4">
                             <a href="#" class="hover:text-yellow-700">
                                 <i data-lucide="facebook" class="w-6 h-6"></i>
@@ -653,23 +904,38 @@
                             <a href="#" class="hover:text-yellow-700">
                                 <i data-lucide="linkedin" class="w-6 h-6"></i>
                             </a>
-                            <a href="#" class="hover:text-yellow-700">
-                                <i data-lucide="instagram" class="w-6 h-6"></i>
-                            </a>
                         </div>
                     </div>
 
                     <div>
-                        <h3 class="text-xl font-bold mb-4">Liens Utiles</h3>
+                        <h3 class="text-xl font-bold mb-4">Promotions</h3>
                         <ul class="space-y-2">
-                            <li><a href="#"
-                                    class="hover:text-yellow-700">Admissions</a></li>
-                            <li><a href="#"
-                                    class="hover:text-yellow-700">Programmes</a></li>
-                            <li><a href="#" class="hover:text-yellow-700">Vie
-                                    Étudiante</a></li>
-                            <li><a href="#"
-                                    class="hover:text-yellow-700">Partenariats</a></li>
+                            <li><a href="page4.html?promo=2024"
+                                    class="hover:text-yellow-700">Promotion
+                                    2024</a></li>
+                            <li><a href="page4.html?promo=2023"
+                                    class="hover:text-yellow-700">Promotion
+                                    2023</a></li>
+                            <li><a href="page4.html?promo=2022"
+                                    class="hover:text-yellow-700">Promotion
+                                    2022</a></li>
+                            <li><a href="page4.html"
+                                    class="hover:text-yellow-700">Toutes les
+                                    promotions</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Formations</h3>
+                        <ul class="space-y-2">
+                            <li><a href="page4.html?parcours=AP"
+                                    class="hover:text-yellow-700">AP</a></li>
+                            <li><a href="page4.html?parcours=MIAGE"
+                                    class="hover:text-yellow-700">MIAGE</a></li>
+                            <li><a href="page4.html?parcours=Master"
+                                    class="hover:text-yellow-700">Master</a></li>
+                            <li><a href="page4.html?parcours=Ingénieur"
+                                    class="hover:text-yellow-700">Ingénieur</a></li>
                         </ul>
                     </div>
 
@@ -677,13 +943,8 @@
                         <h3 class="text-xl font-bold mb-4">Contact</h3>
                         <ul class="space-y-2">
                             <li class="flex items-center">
-                                <i data-lucide="map-pin"
-                                    class="w-5 h-5 mr-2"></i>
-                                <span>Libreville, Gabon</span>
-                            </li>
-                            <li class="flex items-center">
                                 <i data-lucide="mail" class="w-5 h-5 mr-2"></i>
-                                <span>contact@iai-gabon.edu</span>
+                                <span>promotions@iai-gabon.edu</span>
                             </li>
                             <li class="flex items-center">
                                 <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
@@ -691,28 +952,14 @@
                             </li>
                         </ul>
                     </div>
-
-                    <div>
-                        <h3 class="text-xl font-bold mb-4">Newsletter</h3>
-                        <p class="mb-4">Abonnez-vous pour recevoir nos
-                            actualités</p>
-                        <div class="flex">
-                            <input type="email" placeholder="Votre email"
-                                class="px-4 py-2 rounded-l-lg w-full focus:outline-none">
-                            <button
-                                class="bg-yellow-600 text-white px-4 py-2 rounded-r-lg hover:bg-yellow-700">
-                                <i data-lucide="send" class="w-5 h-5"></i>
-                            </button>
-                        </div>
-                    </div>
                 </div>
 
-                <div class="border-t border-yellow-500 mt-8 pt-8 text-center">
+                <!-- <div class="border-t border-yellow-600 mt-8 pt-8 text-center">
                     <p>&copy; 2023 IAI Gabon - Tous droits réservés</p>
-                </div>
+                </div> -->
             </div>
         </footer>
 
-        <script src="assets/js/script.js"> </script>
+        <script src="assets/js/script.js"></script>
     </body>
 </html>

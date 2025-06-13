@@ -1,3 +1,22 @@
+ ::-moz-selection {
+        background-color: #f59e0b;
+        color: white;
+    }
+    ::selection {
+    background: linear-gradient(to right, #f59e0b, #fbbf24);
+    color: white;
+}
+p::selection {
+    background-color: #f59e0b;
+    color: white;
+}
+
+/* Pour les titres */
+h1::selection, h2::selection, h3::selection {
+    background-color: #d97706; /* Une nuance plus foncée */
+    color: white;
+}
+
  .glassmorphism {
             background: rgba(255, 255, 255, 0.25);
             backdrop-filter: blur(10px);
@@ -107,3 +126,171 @@
             transform: scale(1.05);
         }
     }
+
+       .student-card {
+                transition: all 0.3s ease;
+                position: relative;
+            }
+            .student-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            }
+            .student-info {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: rgba(255, 255, 255, 0.9);
+                padding: 1rem;
+                transform: translateY(100%);
+                transition: transform 0.3s ease;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .student-card:hover .student-info {
+                transform: translateY(0);
+            }
+            .glassmorphism-nav {
+                background: rgba(255, 251, 235, 0.8);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+            }
+            .student-table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            .student-table th, .student-table td {
+                padding: 12px 15px;
+                text-align: left;
+                border-bottom: 1px solid #e5e7eb;
+            }
+            .student-table th {
+                background-color: #fef3c7;
+                font-weight: 600;
+            }
+            .student-table tr:hover {
+                background-color: #fef9c3;
+            }
+            .tab-content {
+                display: none;
+            }
+            .tab-content.active {
+                display: block;
+            }
+            .toggle-btn.active {
+                background-color: #f59e0b;
+                color: white;
+            }
+            .pagination-btn.active {
+                background-color: #f59e0b;
+                color: white;
+            }
+
+            
+          @layer base {
+  @keyframes fade-up {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .animate-fade-up {
+    animation: fade-up 1s ease forwards;
+  }
+  .animate-fade-up { 
+    animation: fade-up 1s ease forwards;
+  }
+  .delay-100ms { 
+    animation-delay: 100ms;
+  }
+  .delay-500ms { 
+    animation-delay: 500ms;
+  }
+  .delay-550ms{
+    animation-delay: 550ms;
+  }
+
+  .delay-600ms{
+    animation-delay: 550ms;
+  }
+   .delay-650ms{
+    animation-delay: 650ms;
+  }
+  .delay-200ms{
+    animation-delay: 200ms;
+  }
+   .delay-250ms{
+    animation-delay: 250ms;
+  }
+    .delay-300ms{
+    animation-delay: 300ms;
+  }
+  .delay-350ms{
+    animation-delay: 350ms;
+  }
+  .delay-400ms{
+    animation-delay: 400ms;
+  }
+
+  .delay-450ms{
+    animation-delay: 450ms;
+  }
+  
+}
+
+@layer base {
+  @keyframes zoom-in {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  .animate-zoom-in { 
+    animation: zoom-in 1s ease forwards;
+  }
+ 
+}
+
+@layer base {
+  @keyframes fade-right {
+    from {
+      transform: translateX(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .animate-fade-right { 
+    animation: fade-right 1s ease forwards;
+  }
+
+}
+
+@layer base {
+  @keyframes fade-left {
+    from {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .animate-fade-left { 
+    animation: fade-left 1s ease forwards;
+  }
+ 
+}
