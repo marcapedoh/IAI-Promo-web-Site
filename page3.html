@@ -49,12 +49,13 @@
                             class="text-xl font-bold text-gray-800 hidden sm:inline-block">IAI
                             Promotions</span>
                         <span
-                            class="text-xl font-bold text-gray-800 sm:hidden">IAI</span>
+                            class="text-xl font-bold text-gray-800 sm:hidden">IAI
+                            Promotions</span>
                     </div>
 
                     <!-- Menu centré -->
                     <div
-                        class="flex flex-wrap justify-center items-center gap-4 md:gap-6 lg:gap-8">
+                        class="hidden md:flex flex flex-wrap justify-center items-center gap-4 md:gap-6 lg:gap-8">
                         <a href="index.html" class="nav-link">Accueil</a>
                         <a href="page2.html" class="nav-link">Statistiques</a>
                         <a href="#clubs" class="nav-link">Clubs</a>
@@ -63,9 +64,24 @@
                     </div>
 
                     <!-- Bouton menu mobile -->
-                    <button class="md:hidden absolute right-6 top-5">
+                    <button class="md:hidden absolute right-6 top-5"
+                        id="mobile-menu-button">
                         <i data-lucide="menu" class="w-6 h-6 text-gray-800"></i>
                     </button>
+
+                    <!-- Menu mobile (masqué par défaut) -->
+                    <div id="mobile-menu"
+                        class="hidden md:hidden px-6 pb-4 ">
+                        <div class="flex flex-col space-y-3 pt-2">
+                            <a href="index.html" class="nav-link">Accueil</a>
+                            <a href="page2.html"
+                                class="nav-link">Statistiques</a>
+                            <a href="#clubs" class="nav-link">Clubs</a>
+                            <a href="#evenements"
+                                class="nav-link">Événements</a>
+                            <a href="#bureau" class="nav-link">Bureau</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>

@@ -55,22 +55,35 @@
                         </div>
 
                         <!-- Menu centré -->
-                        <div class="flex items-center space-x-4 md:space-x-8">
+                        <div
+                            class="hidden md:flex flex items-center space-x-4 md:space-x-8">
                             <a href="index.html"
                                 class="text-gray-800 font-semibold hover:text-yellow-600 transition-colors px-3 py-1 rounded-lg hover:bg-yellow-100/50">Accueil</a>
                             <a href="page2.html"
                                 class="text-gray-800 font-semibold hover:text-yellow-600 transition-colors px-3 py-1 rounded-lg hover:bg-yellow-100/50">Statistiques</a>
                             <a href="page3.html"
                                 class="text-gray-800 font-semibold hover:text-yellow-600 transition-colors px-3 py-1 rounded-lg hover:bg-yellow-100/50">Clubs</a>
-                            <a href="promotions.html"
-                                class="bg-yellow-500 px-4 py-2 rounded-lg text-white font-semibold hover:bg-yellow-600 transition shadow-md">Promotions</a>
                         </div>
 
                         <!-- Bouton menu mobile -->
-                        <button class="md:hidden absolute right-6 top-5">
+                        <button class="md:hidden absolute right-6 top-5"
+                            id="mobile-menu-button">
                             <i data-lucide="menu"
                                 class="w-6 h-6 text-gray-800"></i>
                         </button>
+
+                        <!-- Menu mobile (masqué par défaut) -->
+                        <div id="mobile-menu"
+                            class="hidden md:hidden px-6 pb-4">
+                            <div class="flex flex-col space-y-3 pt-2">
+                                <a href="index.html"
+                                    class="text-gray-800 font-semibold hover:text-yellow-600 transition-colors px-3 py-1 rounded-lg hover:bg-yellow-100/50">Accueil</a>
+                                <a href="page2.html"
+                                    class="text-gray-800 font-semibold hover:text-yellow-600 transition-colors px-3 py-1 rounded-lg hover:bg-yellow-100/50">Statistiques</a>
+                                <a href="page3.html"
+                                    class="text-gray-800 font-semibold hover:text-yellow-600 transition-colors px-3 py-1 rounded-lg hover:bg-yellow-100/50">Clubs</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

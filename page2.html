@@ -13,8 +13,8 @@
         <!-- Lucide Icons CDN -->
         <script src="https://unpkg.com/lucide@latest"></script>
         <!-- AOS Animation CDN -->
-        <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <!-- Typed.js for auto typing text -->
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <link rel="stylesheet" href="assets/css/style2.css">
@@ -59,7 +59,7 @@
 
                         <!-- Menu centré -->
                         <div
-                            class="flex flex-wrap justify-center items-center gap-4 md:gap-8">
+                            class="hidden md:flex flex flex-wrap justify-center items-center gap-4 md:gap-8">
                             <a href="index.html" class="nav-link">Accueil</a>
                             <a href="#stats" class="nav-link">Statistiques</a>
                             <a href="#temoignages"
@@ -70,11 +70,31 @@
                                 Événements</a>
                         </div>
 
-                        <!-- Bouton menu mobile -->
-                        <button class="md:hidden absolute right-6 top-5">
+                        <!-- Menu mobile (masqué par défaut) -->
+
+                        <button class="md:hidden absolute right-6 top-5"
+                            id="mobile-menu-button">
                             <i data-lucide="menu"
                                 class="w-6 h-6 text-gray-800"></i>
                         </button>
+
+                        <!-- Menu mobile (masqué par défaut) -->
+                        <div id="mobile-menu"
+                            class="hidden md:hidden px-6 pb-4 ">
+                            <div class="flex flex-col space-y-3 pt-2">
+                                <a href="index.html"
+                                    class="nav-link-mobile">Accueil</a>
+                                <a href="#stats"
+                                    class="nav-link-mobile">Statistiques</a>
+                                <a href="#temoignages"
+                                    class="nav-link-mobile">Témoignages</a>
+                                <a href="#partenariats"
+                                    class="nav-link-mobile">Partenariats</a>
+                                <a href="page3.html"
+                                    class="nav-link-cta-mobile">Clubs &
+                                    Événements</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

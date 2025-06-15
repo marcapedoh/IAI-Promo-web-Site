@@ -51,9 +51,9 @@
                                 Promotions</span>
                         </div>
 
-                        <!-- Menu centré -->
+                        <!-- Menu pour desktop (toujours visible sur md+) -->
                         <div
-                            class="flex flex-wrap justify-center items-center gap-4 md:gap-8">
+                            class="hidden md:flex flex-wrap justify-center items-center gap-4 md:gap-8">
                             <a href="#"
                                 class="text-gray-800 font-semibold hover:text-yellow-600 transition-colors px-3 py-1 rounded-lg hover:bg-yellow-100/50">Accueil</a>
                             <a href="#promotions"
@@ -66,10 +66,31 @@
                         </div>
 
                         <!-- Bouton menu mobile -->
-                        <button class="md:hidden absolute right-6 top-5">
-                            <i data-lucide="menu"
-                                class="w-6 h-6 text-gray-800"></i>
+                        <button id="mobile-menu-button"
+                            class="md:hidden absolute right-6 top-5">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-6 h-6 text-gray-800" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
                         </button>
+                    </div>
+
+                    <!-- Menu mobile (masqué par défaut) -->
+                    <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+                        <div class="flex flex-col space-y-3">
+                            <a href="#"
+                                class="text-gray-800 font-semibold hover:text-yellow-600 transition-colors px-3 py-2 rounded-lg hover:bg-yellow-100/50">Accueil</a>
+                            <a href="#promotions"
+                                class="text-gray-800 font-semibold hover:text-yellow-600 transition-colors px-3 py-2 rounded-lg hover:bg-yellow-100/50">Promotions</a>
+                            <a href="#formations"
+                                class="text-gray-800 font-semibold hover:text-yellow-600 transition-colors px-3 py-2 rounded-lg hover:bg-yellow-100/50">Formations</a>
+                            <a href="page4.html"
+                                class="bg-yellow-500 px-4 py-2 rounded-lg text-white font-semibold hover:bg-yellow-600 transition shadow-md text-center">Explorer
+                                les promotions</a>
+                        </div>
                     </div>
                 </div>
             </div>
